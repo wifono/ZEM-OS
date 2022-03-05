@@ -80,6 +80,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1.5em;
+  margin: 1em;
   margin-top: 5em; }
   .boxes .small-box {
     display: flex;
