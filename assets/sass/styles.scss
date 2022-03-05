@@ -1,0 +1,63 @@
+$header-color: #434343;
+$bg-color: #585858;
+$white: aliceblue;
+$yellow: #FEDD00;
+
+$font: 'Poppins', sans-serif;
+
+@mixin transition {
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    width: 90vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    height: 3.70em;
+
+    background-color: $header-color;
+}
+
+img {
+    width: 10em;
+    position: absolute;
+    left: 8%;
+}
+
+nav {
+    display: flex;
+    gap: 1.5em;
+    li {
+        list-style-type: none;
+        font-size: .75em;
+
+        a{
+            color: $white; 
+               
+            &:hover,
+            &:active {
+            color: $yellow ;
+            @include transition();
+            }
+        }
+    }
+}
