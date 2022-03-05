@@ -87,7 +87,8 @@ main {
     align-items: center;
     width: 20em;
     height: 15em;
-    background-color: #4343439f; }
+    background-color: #4343439f;
+    margin-bottom: 3em; }
     .boxes .small-box img {
       width: 13%;
       margin-top: 2.3em; }
