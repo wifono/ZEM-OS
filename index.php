@@ -19,7 +19,7 @@
     <body>
 
         <header>
-            <img class="nav-logo" src="/assets/img/NAV-LOGO.svg" alt="Logo here:)">
+            <img class="nav-logo" src="assets/img/NAV-LOGO1.svg" alt="Logo here:)">
             <nav>
                 <li><a href="#">Domov</a></li>
                 <li><a href="#">Služby</a></li>
@@ -31,7 +31,7 @@
 
         <main>
             <div class="big-logo">
-                <img src="/assets/img/LOGO.svg" alt="Logo here:)">
+                <img src="assets/img/LOGO1.svg" alt="Logo here:)">
             </div>
 
             <div class="sidebar">
@@ -59,19 +59,19 @@
         <article>
             <div class="boxes">
                 <div class="small-box">
-                    <img src="/assets/img/@.svg" alt="zavináč:)">
+                    <img src="assets/img/@1.svg" alt="zavináč:)">
                 </div>
 
                 <div class="small-box">
-                    <img src="/assets/img/phone-call.svg" alt="telefón:)">
+                    <img src="assets/img/phone-call1.svg" alt="telefón:)">
                 </div>
 
                 <div class="small-box">
-                    <img src="/assets/img/Path 61.svg" alt="šípka:)">
+                    <img src="assets/img/Path 61-1.svg" alt="šípka:)">
                 </div>
 
                 <div class="small-box">
-                    <img src="/assets/img/world-wide-web.svg" alt="web:)">
+                    <img src="assets/img/world-wide-web1.svg" alt="web:)">
                 </div>
             </div>
         </article>
