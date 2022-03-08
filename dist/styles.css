@@ -83,7 +83,7 @@ main {
 }
 
 .desc {
-  width: 70%;
+  width: 65%;
   color: aliceblue;
 }
 
@@ -93,7 +93,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1.5em;
-  margin: 2em;
+  margin-top: 3em;
 }
 .boxes .small-box {
   display: flex;
@@ -106,7 +106,16 @@ main {
 }
 .boxes .small-box img {
   width: 13%;
-  margin-top: 2.3em;
+  margin-top: -1em;
+}
+.boxes .small-box a {
+  color: aliceblue;
+  margin-top: 4.5em;
+  font-size: 1.1em;
+}
+.boxes .small-box a:hover, .boxes .small-box a:active {
+  color: #FEDD00;
+  transition: all 0.3s ease-in-out;
 }
 .boxes .small-box:nth-child(3) img {
   width: 10%;
