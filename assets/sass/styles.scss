@@ -245,6 +245,22 @@ main {
 
 }
 
+
+
+
+.contact-form {
+    h1 {
+        font-size: .9em;
+        color: $yellow;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width:800px) {
     
 }

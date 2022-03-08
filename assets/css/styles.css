@@ -174,11 +174,6 @@ main {
 .contact-form h1 {
   font-size: 0.9em;
   color: #FEDD00;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-.contact-form form {
-  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
