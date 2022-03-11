@@ -205,6 +205,58 @@ main {
     }
 }
 
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background: $contact-button;
+}
+
+.contact-list {
+    
+    h1 {
+        text-transform: uppercase;
+        color: $yellow;
+        font-size: .9em;
+        font-weight: 300;
+    }
+}
+
+.contact-form {
+    h1 {
+        font-size: .9em;
+        color: $yellow;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    form {
+        input {
+            background: darken($contact-button,5%);
+            border-radius: .7em;
+            border: .05em solid lighten($almost-black, 30%);
+            height: 2.1em;
+            margin: .20em;
+            padding: .2em;
+            text-align: center;
+
+            &:nth-child(7) {
+                width: 25.80em;
+                height: 10em;
+            }
+
+            &:nth-child(9) {
+                width: 8em;
+                height: 2.5em;
+                margin-left: 35%;
+
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 1100px) {
     
@@ -245,21 +297,6 @@ main {
 
 }
 
-
-
-
-.contact-form {
-    h1 {
-        font-size: .9em;
-        color: $yellow;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
-
-    form {
-        width: 50%;
-    }
-}
 
 @media screen and (max-width:800px) {
     
