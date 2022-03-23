@@ -1,0 +1,8 @@
+
+@mixin transition {
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    width: 100vw;
+}
