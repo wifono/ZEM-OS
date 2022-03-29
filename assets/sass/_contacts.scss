@@ -1,7 +1,8 @@
 .contacts {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 
     height: 45vw;
 
@@ -9,36 +10,29 @@
 
     h1 {
         color: $yellow;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
-        font-size: 1.8em;
+        font-size: 1.2em;
 
         margin-top: 3em;
     }
 
     .flex-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
         justify-content: center;
-        gap: 2em;
+        gap: 15em;
+        margin-top: 3em;
     }
 
 }
 
 .contact-list {
-    
-    h1 {
-        text-transform: uppercase;
-        color: $almost-black;
-        font-size: .9em;
-        font-weight: 400;
-    }
 
     ul {
         display: flex;
-        flex-direction: row;
-        gap: 2em;   
+        flex-direction: column;   
         margin-top: .5em;
         font-weight: 300;
     }

@@ -138,36 +138,31 @@ main {
 
 .contacts {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   height: 45vw;
   background: #C9C9C9;
 }
 .contacts h1 {
   color: #FEDD00;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.2em;
   margin-top: 3em;
 }
 .contacts .flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
-  gap: 2em;
+  gap: 15em;
+  margin-top: 3em;
 }
 
-.contact-list h1 {
-  text-transform: uppercase;
-  color: #212121;
-  font-size: 0.9em;
-  font-weight: 400;
-}
 .contact-list ul {
   display: flex;
-  flex-direction: row;
-  gap: 2em;
+  flex-direction: column;
   margin-top: 0.5em;
   font-weight: 300;
 }
