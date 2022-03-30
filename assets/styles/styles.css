@@ -201,7 +201,7 @@ main {
   text-align: center;
 }
 .contact-form form input:hover, .contact-form form input:active, .contact-form form input:focus {
-  background-color: #cccccc;
+  background-color: #b0b0b0;
   transition: all 0.3s ease-in-out;
 }
 .contact-form form input:nth-child(7) {
@@ -217,6 +217,20 @@ main {
   background-color: #FEDD00;
   color: #212121;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+.contact-form form textarea {
+  margin-top: 0.2em;
+  background: #bcbcbc;
+  border-radius: 0.7em;
+  padding: 1em;
+  width: 24.3em;
+  height: 10em;
+  resize: none;
+}
+.contact-form form textarea:hover, .contact-form form textarea:active {
+  background-color: #b0b0b0;
+  color: #212121;
   transition: all 0.3s ease-in-out;
 }
 
