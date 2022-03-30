@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    height: 3.70em;
+
+    background-color: $header-color;
+
+    // box-shadow: lighten($almost-black, 15%) 0 0 1em;
+
+    img {
+    width: 10em;
+    position: absolute;
+    left: 8%;
+    }
+}

@@ -1,0 +1,128 @@
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 45vw;
+
+    background: $contact-button;
+
+    h1 {
+        color: $almost-black;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.2em;
+
+        margin-top: 3em;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15em;
+        margin-top: 3em;
+    }
+
+}
+
+.contact-list {
+
+    ul {
+        display: flex;
+        flex-direction: column;   
+        margin-top: .5em;
+        font-weight: 300;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 1.2em;
+        color: $almost-black;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    p {
+        width: 25em;
+        
+        font-weight: 300;
+        font-size: .9em;
+        margin-left: .1em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+
+        text-align: center;
+    }
+
+    form {
+        input {
+            background: darken($contact-button,5%);
+            border-radius: .7em;
+            border: .05em solid lighten($almost-black, 30%);
+            height: 2.1em;
+            margin: .20em;
+            padding: .2em;
+            text-align: center;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: darken($contact-button, 10%);
+                @include transition();
+            }
+
+            &:nth-child(7) {
+                width: 25.80em;
+                height: 10em;
+            }
+
+            &:nth-child(9) {
+                width: 8em;
+                height: 2.5em;
+                margin-left: 35%;
+
+                &:hover,
+                &:active {
+                    background-color: $yellow;
+                    color: $almost-black;
+                    border: none;
+                    @include transition();
+                }
+
+            }
+        }
+
+        textarea {
+            margin-top: .2em;
+
+            background: darken($contact-button,5%);
+            border-radius: .7em;
+            padding: 1em;
+
+            width: 24.3em;
+            height: 10em;
+            resize:none;
+
+            &:hover,
+            &:active {
+                background-color: darken($contact-button, 10%);
+                color: $almost-black;
+                @include transition();
+            }
+        }
+    }
+}
+
