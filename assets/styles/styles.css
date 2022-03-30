@@ -145,7 +145,7 @@ main {
   background: #C9C9C9;
 }
 .contacts h1 {
-  color: #FEDD00;
+  color: #212121;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -178,7 +178,7 @@ main {
 }
 .contact-form h1 {
   font-size: 1.2em;
-  color: #FEDD00;
+  color: #212121;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -200,6 +200,10 @@ main {
   padding: 0.2em;
   text-align: center;
 }
+.contact-form form input:hover, .contact-form form input:active, .contact-form form input:focus {
+  background-color: #cccccc;
+  transition: all 0.3s ease-in-out;
+}
 .contact-form form input:nth-child(7) {
   width: 25.8em;
   height: 10em;
@@ -208,6 +212,12 @@ main {
   width: 8em;
   height: 2.5em;
   margin-left: 35%;
+}
+.contact-form form input:nth-child(9):hover, .contact-form form input:nth-child(9):active {
+  background-color: #FEDD00;
+  color: #212121;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .services {
