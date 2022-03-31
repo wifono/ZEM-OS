@@ -4,7 +4,7 @@
     align-items: flex-start;
     justify-content: center;
 
-    height: 45vw;
+    height: 38vw;
 
     background: $contact-button;
 
@@ -93,6 +93,8 @@
                 width: 8em;
                 height: 2.5em;
                 margin-left: 35%;
+
+                cursor: pointer;
 
                 &:hover,
                 &:active {

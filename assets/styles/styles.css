@@ -141,7 +141,7 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  height: 45vw;
+  height: 38vw;
   background: #C9C9C9;
 }
 .contacts h1 {
@@ -212,6 +212,7 @@ main {
   width: 8em;
   height: 2.5em;
   margin-left: 35%;
+  cursor: pointer;
 }
 .contact-form form input:nth-child(9):hover, .contact-form form input:nth-child(9):active {
   background-color: #FEDD00;
