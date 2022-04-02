@@ -245,6 +245,7 @@ main {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 35%;
+  background-attachment: fixed;
 }
 .services h1 {
   color: #FEDD00;
@@ -264,6 +265,39 @@ main {
   display: flex;
   gap: 35em;
   color: aliceblue;
+  font-weight: 300;
+}
+
+footer .flex-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 4em;
+  padding: 2.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+footer h1 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #b29a00;
+}
+footer ul {
+  list-style-type: none;
+  font-size: 0.9em;
+}
+footer ul li {
+  color: #2e2e2e;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+footer ul li a:hover, footer ul li a:active {
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
   font-weight: 300;
 }
 
