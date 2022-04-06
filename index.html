@@ -5,6 +5,7 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/4c2f3a8e33.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ZEM-OS | Zemné a výkopové práce, preprava materiálu</title>
@@ -14,13 +15,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
 
         <header>
-            <img class="nav-logo" src="assets/img/NAV-LOGO.png" alt="Logo here:)">
-            <nav>
+            <img class="nav-logo animate__fadeIn animate__animated" src="assets/img/NAV-LOGO.png" alt="Logo here:)">
+            <nav class="animate__fadeIn animate__animated">
                 <li><a class="active" href="#">Domov</a></li>
                 <li><a href="#">Služby</a></li>
                 <li><a href="#">Cenník</a></li>
@@ -31,10 +33,10 @@
 
         <main>
             <div class="big-logo">
-                <img src="assets/img/LOGO.png" alt="Logo here:)">
+                <img class="animate__fadeIn animate__animated" src="assets/img/LOGO.png" alt="Logo here:)">
             </div>
 
-            <div class="sidebar">
+            <div class="sidebar animate__fadeIn animate__animated">
                 <article>
                     <h1>O nás</h1>
 
@@ -58,20 +60,26 @@
            
         <article>
             <div class="boxes">
-                <div class="small-box">
-                    <img src="assets/img/@.png" alt="zavináč:)">
+                <div class="small-box animate__fadeIn animate__animated">
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>  
                     <h1>Čo ponúkame?</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt cupiditate reprehenderit rem nemo!</p>
                 </div>
 
-                <div class="small-box">
-                    <img src="assets/img/phone-call.png" alt="telefón:)">
+                <div class="small-box animate__fadeIn animate__animated">
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
                     <h1>Garancia kvality</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt cupiditate reprehenderit rem nemo!</p>
                 </div>
 
-                <div class="small-box">
-                    <img src="assets/img/Path 61.png" alt="šípka:)">
+                <div class="small-box animate__fadeIn animate__animated">
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </div>
                     <h1>Priateľský prístup</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt cupiditate reprehenderit rem nemo!</p>
                 </div>
@@ -80,9 +88,9 @@
         </article>
 
         <article class="services">
-            <h1 class="services-title">Služby</h1>
+            <h1 class="services-title animate__fadeIn animate__animated">Služby</h1>
 
-        <div class="services-list">
+        <div class="services-list animate__fadeIn animate__animated">
            <div class="left-side">
                <h1>Výkopové práce</h1>
                
@@ -124,13 +132,16 @@
                 <h1>Kontaktný formulár</h1>
                 <p>V prípade otázok nás neváhajte kontaktovať prostredníctvom kontaktného formuláru.</p>
                 <form action="post">
-                <input type="text" name="name" placeholder="Meno" required>
-                <input type="text" name="email" placeholder="e-mail*"> <br>
+                <input type="text" name="name" placeholder="Meno*" required>
+                <input type="text" name="email" placeholder="e-mail*" required> <br>
                 <input type="text" name="email-val" placeholder="potvrdenie e-mailu" required>
                 <input type="text" name="telnum" placeholder="tel. číslo"><br>
                 <textarea type="text" name="question" placeholder="Vaša otázka..." required></textarea> <br>
                 <input type="submit" name="submit" placeholder="Odoslať">
                 </form>
+
+                <span>*Polia označené hviezdičkou sú povinné.</span>
+                <span>Odoslaním kontaktného formuláru potvrdzujete, že ste sa oboznámili s <a href="#">Informáciami o spracovaní osobných údajov</a> a súhlasíte s ich spracovaním.</span>
             </div>
         </div>
         </article>
@@ -145,6 +156,7 @@
                             <li><a href="#">Cenník</a></li>
                             <li><a href="#">Kontakty</a></li>
                             <li><a href="#">Galéria</a></li>
+                            <li><a href="#">Informácie o spracovávaní osobných údajov</a></li>
                             </ul>
                 </div>
 
