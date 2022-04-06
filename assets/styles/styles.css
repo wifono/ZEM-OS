@@ -23,6 +23,8 @@ header {
   justify-content: center;
   position: fixed;
   width: 100%;
+  z-index: 22222;
+  box-shadow: 0 0 0.5em #353535;
   height: 3.70em;
   top: 0;
   background-color: rgba(67, 67, 67, 0.8); }
@@ -40,7 +42,7 @@ nav {
     nav li a {
       color: aliceblue; }
       nav li a:hover, nav li a:active {
-        color: #FEDD00;
+        color: lightseagreen;
         transition: all .3s ease-in-out; }
     nav li .active {
       color: #FEDD00; }
@@ -66,7 +68,8 @@ main {
   height: 20em;
   display: flex;
   align-items: center;
-  text-align: left; }
+  text-align: left;
+  line-height: 1.8em; }
   .sidebar article {
     margin-top: 4.5em; }
   .sidebar h1 {
@@ -94,14 +97,15 @@ main {
     flex-direction: column;
     align-items: center;
     animation-duration: .7s;
+    box-shadow: 0 0 1em #515151;
     width: 20em;
     height: 15em;
     background-color: #4343439f;
     margin-bottom: 3em; }
     .boxes .small-box:nth-of-type(2) {
-      animation-duration: .9s; }
+      animation-duration: .8s; }
     .boxes .small-box:nth-of-type(3) {
-      animation-duration: 1s; }
+      animation-duration: .9s; }
     .boxes .small-box .icon {
       text-align: center;
       margin-top: -1.2em;
@@ -149,13 +153,20 @@ main {
     margin-top: 3em;
     height: 100%; }
 
+a {
+  color: #212121; }
+  a:hover, a:active, a:focus {
+    color: lightseagreen;
+    transition: all .3s ease-in-out; }
+
 .contact-list ul {
   display: flex;
   flex-direction: column;
   margin-top: .5em;
   font-weight: 300; }
 .contact-list li {
-  list-style-type: none; }
+  list-style-type: none;
+  color: #545454; }
 
 .contact-form {
   display: flex;
@@ -275,14 +286,20 @@ footer ul {
   font-size: .9em; }
   footer ul li {
     color: #2e2e2e;
-    width: 85%; }
+    padding: .1em 0em; }
     footer ul li a {
       text-decoration: none;
       color: #2e2e2e; }
       footer ul li a:hover, footer ul li a:active {
-        color: aliceblue;
+        color: #cccccc;
         transition: all .3s ease-in-out;
-        font-weight: 300; }
+        font-weight: 400; }
+
+.foot-nav:hover h1,
+.foot-contacts:hover h1,
+.created-by:hover h1 {
+  color: #e5c700;
+  transition: all .3s ease-in-out; }
 
 @media screen and (max-width: 1100px) {
   main {

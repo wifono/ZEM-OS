@@ -24,7 +24,8 @@ footer {
 
         li {
             color: lighten($almost-black, 5%);
-            width: 85%;
+            padding: .1em 0em;
+            
 
             a {
                 text-decoration: none;
@@ -32,12 +33,20 @@ footer {
 
                 &:hover,
                 &:active {
-                    color: $white;
+                    color: darken(white, 20%);
                     @include transition();
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
         }
     }
+}
 
+.foot-nav:hover,
+.foot-contacts:hover,
+.created-by:hover {
+    h1 {
+        color: darken($yellow, 5%);
+        @include transition();
+    }
 }
