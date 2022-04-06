@@ -21,7 +21,7 @@
     <body>
 
         <header>
-            <img class="nav-logo animate__fadeIn animate__animated" src="assets/img/NAV-LOGO.png" alt="Logo here:)">
+            <img class="nav-logo animate__fadeIn animate__animated" src="assets/img/NAV-LOGO.png" alt="Logo here:)"  onclick="location.href = 'index.html' ">
             <nav class="animate__fadeIn animate__animated">
                 <li><a class="active" href="#">Domov</a></li>
                 <li><a href="#">Služby</a></li>
@@ -32,8 +32,8 @@
         </header>
 
         <main>
-            <div class="big-logo">
-                <img class="animate__fadeIn animate__animated" src="assets/img/LOGO.png" alt="Logo here:)">
+            <div class="big-logo" onclick="location.href = 'index.html' ">
+                <img class="animate__fadeIn animate__animated" src="assets/img/LOGO.png" alt="Logo here:)" onclick="location.href='#'">
             </div>
 
             <div class="sidebar animate__fadeIn animate__animated">

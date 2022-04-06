@@ -31,7 +31,8 @@ header {
   header img {
     width: 9em;
     position: absolute;
-    left: 13%; }
+    left: 13%;
+    cursor: pointer; }
 
 nav {
   display: flex;
@@ -62,7 +63,8 @@ main {
   margin-left: .5em; }
   .big-logo img {
     max-width: 36.5em;
-    height: auto; }
+    height: auto;
+    cursor: pointer; }
 
 .sidebar {
   height: 20em;
