@@ -1,7 +1,5 @@
 const parallaxElements = [...document.getElementsByClassName('services')];
 
-console.log(parallaxElements);
-
 const parallax = function(img) {
     const speed = 3;
     let position = '-' + (window.pageYOffset / speed) + "px";
