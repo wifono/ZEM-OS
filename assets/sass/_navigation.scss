@@ -11,7 +11,7 @@ nav {
                
             &:hover,
             &:active {
-            color: $yellow ;
+            color: $hover;
             @include transition();
             }
     }
