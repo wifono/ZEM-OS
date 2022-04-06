@@ -11,6 +11,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation-duration: .7s;
+
+        &:nth-of-type(2) {
+            animation-duration: .9s;
+        }
+
+        &:nth-of-type(3) {
+            animation-duration: 1s;
+        }
 
         // box-shadow: lighten($almost-black, 15%) 0 0 .5em;
 
@@ -19,9 +28,19 @@
         background-color: $small-box;
         margin-bottom: 3em;
 
-        img {
-            width: 13%;
-            margin-top: -1em;
+        .icon {
+            text-align: center;
+            margin-top: -1.2em;
+            background-color: $bg-color;
+            border-radius: 50%;
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+        i {
+            font-size: 2.57em;
+            color: rgb(202, 202, 202);
+            text-shadow: 0 0 .4em darken($almost-black, 5%);
         }
 
         h1 {

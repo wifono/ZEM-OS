@@ -4,7 +4,7 @@
     align-items: flex-start;
     justify-content: center;
 
-    height: 45vw;
+    height: 43em;
 
     background: $contact-button;
 
@@ -24,6 +24,7 @@
         justify-content: center;
         gap: 15em;
         margin-top: 3em;
+        height: 100%;
     }
 
 }
@@ -47,6 +48,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 30em;
+
+    span {
+        font-size: .8em;
+        font-weight: 300;
+        margin-top: .85em;
+        text-align: center;
+
+        &:nth-of-type(2) {
+            width: 90%;
+        }
+
+        a {
+            color: lighten($yellow, 10%);
+            font-weight: 500;
+
+            &:hover {
+                color: lightseagreen;
+                @include transition();
+            }
+        }
+    }
 
     h1 {
         font-size: 1.2em;
@@ -69,13 +92,15 @@
 
     form {
         input {
-            background: darken($contact-button,5%);
+            background: darken($contact-button,8%);
             border-radius: .7em;
-            border: .05em solid lighten($almost-black, 30%);
+            // border: .05em solid lighten($almost-black, 30%);
             height: 2.1em;
+            width: 14.75em;
             margin: .20em;
             padding: .2em;
             text-align: center;
+            border: none;
 
             &:hover,
             &:active,
@@ -92,7 +117,10 @@
             &:nth-child(9) {
                 width: 8em;
                 height: 2.5em;
-                margin-left: 35%;
+                margin-left: 11.5em;
+                margin-top: .7em;
+
+                cursor: pointer;
 
                 &:hover,
                 &:active {
@@ -115,6 +143,7 @@
             width: 24.3em;
             height: 10em;
             resize:none;
+            border: none;
 
             &:hover,
             &:active {
