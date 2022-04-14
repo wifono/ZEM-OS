@@ -1,43 +1,174 @@
 @media screen and (max-width: 1100px) {
     
     main {
+        margin-top: 2em;
+        padding: 2em;
+
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1041px) {
+    
+    main {
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        margin-top: 13%;
+
         align-items: center;
         justify-content: center;
 
-        .big-logo {
-            display: flex;
+        img {
+            width: 400px;
+        }
+
+        .sidebar {
+            width: 100%;
             align-items: center;
             justify-content: center;
-            margin:2em;
 
-            img {
-                width: 50%;
+            .desc {
+                width: 60vw;
+                text-align: center;
             }
-        }
-    }
+            
+            article {
+                  text-align: center;
 
-    .sidebar {
-        margin: 0;
-        height: 18em;
-
-        h1 {
-            margin-top: 0;
+                  margin: 0;
+              }
         }
     }
 
     .boxes {
-        margin-top: 2em;
-        gap: .8em;
-        .small-box {
-            height: 12em;
-            margin-bottom: 1em;
-        }
+        gap: .5%;
+        margin-top: 0;
     }
 
 }
 
+@media screen and (max-width: 981px) {
 
-@media screen and (max-width:800px) {
-    
+    .nav-logo {
+        left: 5%;
+    }
+
+    .big-logo {
+        margin-top: 3em;
+    }
+
+    .boxes {
+        width: 90%;
+        margin: 0;
+    }
+
+    .articlebox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+    }
+
+    .sidebar {
+        margin: 2em;
+        margin-bottom: 3em;
+        article {
+             flex-direction: column; 
+        }
+    }
+
+    .services {
+        margin: 0;
+        padding: 0;
+        background-size: 130%;
+
+        .services-list {
+            flex-direction: column;
+            gap: 3vh;
+            align-self: flex-start;
+            margin-left: 15vw;
+        }
+    }
+
+    .contacts {
+        
+        .flex-container {
+            justify-content: center;
+            gap: 2em;
+        }
+
+        .contact-form {
+            margin-right: -8vw;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+
+        .menuicon,
+        .closemenu {
+            background: none;
+            border: none;
+            font-size: 2em;
+            color: $almost-black;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $hover;
+            }
+        }
+
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 5vw;
+    }
+
+    .hamburgermenu {
+        background-color: darken($bg-color, 10%);
+        width: 100%;
+        position: fixed;
+        top: 3.65em;
+        display: none;
+
+
+        ul {
+            margin: 2em;
+            list-style-type: none;
+
+            li {
+
+                a {
+                    color: darken($white, 5%);
+                    font-weight: 300;
+                    
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $hover;
+                }
+                }
+
+               
+            }
+        }
+    }
+
+    .services {
+        background-size: 180%;
+    }
+
 }

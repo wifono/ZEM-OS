@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="sk">
     <head>
         <script src="https://kit.fontawesome.com/4c2f3a8e33.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
@@ -23,12 +23,28 @@
         <header>
             <img class="nav-logo animate__fadeIn animate__animated" src="assets/img/NAV-LOGO.png" alt="Logo here:)"  onclick="location.href = 'index.html' ">
             <nav class="animate__fadeIn animate__animated">
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="#">Služby</a></li>
-                <li><a href="#">Cenník</a></li>
-                <li><a href="#">Kontakty</a></li>
-                <li><a href="gallery.html">Galéria</a></li>
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="#">Služby</a></li>
+                    <li><a href="#">Cenník</a></li>
+                    <li><a href="#">Kontakty</a></li>
+                    <li><a href="gallery.html">Galéria</a></li>
+                </ul>
             </nav>
+
+            <div class="hamburger">
+                <button class="menuicon animate__fadeIn animate__animated"><i class="fa-solid fa-bars"></i></button>
+                <button class="closemenu animate__fadeIn animate__animated"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="hamburgermenu animate__fadeIn animate__animated">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="#">Služby</a></li>
+                    <li><a href="#">Cenník</a></li>
+                    <li><a href="#">Kontakty</a></li>
+                    <li><a href="gallery.html">Galéria</a></li>
+                </ul>
+            </div>
         </header>
 
         <main>
@@ -58,7 +74,7 @@
           
         </main>
            
-        <article>
+        <article class="articlebox">
             <div class="boxes">
                 <div class="small-box animate__fadeIn animate__animated">
                     <div class="icon">
@@ -107,12 +123,15 @@
 
                <div class="right-side">
                    <h1>Preprava materiálu</h1>
-                   <li>56</li>
-                   <li>21</li>
-                   <li>657</li>
-                   <li>789</li>
-                   <li>15</li>
-                   <li>98</li>
+                   <ul>
+                    <li>56</li>
+                    <li>21</li>
+                    <li>657</li>
+                    <li>789</li>
+                    <li>15</li>
+                    <li>98</li> 
+                   </ul>
+
                </div>
            </div>
 
@@ -136,8 +155,8 @@
                 <input type="text" name="email" placeholder="e-mail*" required> <br>
                 <input type="text" name="email-val" placeholder="potvrdenie e-mailu" required>
                 <input type="text" name="telnum" placeholder="tel. číslo"><br>
-                <textarea type="text" name="question" placeholder="Vaša otázka..." required></textarea> <br>
-                <input type="submit" name="submit" placeholder="Odoslať">
+                <textarea name="question" placeholder="Vaša otázka..." required></textarea> <br>
+                <input type="submit" name="submit">
                 </form>
 
                 <span>*Polia označené hviezdičkou sú povinné.</span>

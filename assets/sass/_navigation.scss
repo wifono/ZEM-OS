@@ -2,6 +2,14 @@ nav {
     display: flex;
     gap: 1.5em;
 
+    ul {
+        display: flex;
+        gap: 1.2em;
+        font-weight: 300;
+        align-items: center;
+        justify-content: center;
+    }
+
     li {
         list-style-type: none;
         font-size: .75em;
@@ -20,4 +28,11 @@ nav {
         color: $yellow;
     }
 }
+}
+
+.hamburger,
+.closemenu,
+.hamburgermenu {
+    display: none;
+    @include transition();
 }

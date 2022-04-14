@@ -1,13 +1,17 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'generals.scss';
+
+// INDEX
 @import 'header.scss';
 @import 'navigation.scss';
 @import 'main.scss';
 @import 'boxes.scss';
 @import 'contacts.scss';
-
 @import 'services.scss';
+
+// GALLERY
+@import 'gallery.scss';
 
 @import 'footer.scss';
 
