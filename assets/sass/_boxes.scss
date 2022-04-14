@@ -12,6 +12,7 @@
         flex-direction: column;
         align-items: center;
         animation-duration: .7s;
+        position: relative;
 
         &:nth-of-type(2) {
             animation-duration: .8s;
