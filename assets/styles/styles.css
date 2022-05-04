@@ -84,7 +84,7 @@ main {
   display: flex;
   align-items: center;
   text-align: left;
-  line-height: 1.8em; }
+  line-height: 1.4em; }
   .sidebar article {
     margin-top: 4.5em; }
   .sidebar h1 {
@@ -275,13 +275,21 @@ a {
     margin-top: 3em;
     margin-bottom: 1.5em;
     font-size: 2em; }
-  .services li {
-    list-style-type: none; }
   .services .services-list {
     display: flex;
-    gap: 35em;
+    margin-top: 3em;
+    gap: 10em;
+    width: 60vw;
+    line-height: 1.7em;
     color: aliceblue;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: .95em;
+    text-align: left; }
+    .services .services-list a {
+      text-decoration: none;
+      color: #FEDD00; }
+      .services .services-list a:hover, .services .services-list a:active, .services .services-list a:target {
+        color: #0AAEF3; }
 
 .gallery-main {
   margin: 0;
@@ -337,10 +345,10 @@ a {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    left: 78vw;
     margin-top: 2%;
     font-size: 3em;
-    color: #212121; }
+    padding: .1em;
+    color: rgba(33, 33, 33, 0.5); }
     .galleryModal .modal-top i {
       cursor: pointer; }
       .galleryModal .modal-top i:hover {
@@ -359,7 +367,7 @@ a {
       .galleryModal .modal-center i:hover {
         color: #0AAEF3; }
     .galleryModal .modal-center img {
-      width: 80%;
+      max-width: 80%;
       height: auto; }
 
 footer .flex-footer {

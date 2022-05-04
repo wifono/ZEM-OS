@@ -26,16 +26,30 @@
         margin-bottom: 1.5em;
         font-size: 2em;
     }
-    
-    li {
-        list-style-type:none;
-    }
 
     .services-list {
         display: flex;
-        gap: 35em;
+        margin-top: 3em;
+        gap: 10em;
+        width: 60vw;
+        line-height: 1.7em;
 
         color: $white;
         font-weight: 300;
+        font-size: .95em;
+        text-align: left;
+
+
+        a {
+            text-decoration: none;
+            color: $yellow;
+            
+            &:hover,
+            &:active,
+            &:target {
+                color: $hover;
+            }
+        }
     }
+
 }

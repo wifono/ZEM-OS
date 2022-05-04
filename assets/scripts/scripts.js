@@ -92,13 +92,40 @@ images.forEach( image => {
         div.className = "galleryModal"
 
         document.body.insertAdjacentElement("afterbegin", div)
-        div.insertAdjacentHTML("afterbegin", "<div class='modal-top'><i class='fa-solid fa-xmark' id='close-button'></i></div> <div class='modal-center'><i class='fa-solid fa-angle-left'></i> <img src='https://picsum.photos/1200/800?random=1'> <i class='fa-solid fa-angle-right'></i></div> ")
+        div.insertAdjacentHTML("afterbegin", "<div class='modal-top'><i class='fa-solid fa-xmark' id='close-button'></i></div> <div class='modal-center'><i class='fa-solid fa-angle-left' id='left-arrow'></i>  <img src='"+ e.target.src +"'> <i class='fa-solid fa-angle-right' id='right-arrow'></i></div> ")
+
+
 
         let closeButt = document.getElementById('close-button');
         
+            console.log(e.target.src.split("?")[1]);
+
+
         closeButt.addEventListener('click', () => {
-            console.log("1");
-            div.parentNode.removeChild(div);
+            div.remove();
+        })
+
+        let left = document.getElementById('left-arrow');
+        let right = document.getElementById('right-arrow');
+        let imagesList = [document.getElementsByClassName('images')];
+        
+        left.addEventListener('click', (e) => {
+
+            let imgOnModal = document.getElementsByClassName("modal-center")[0].children[1]
+            
+            let oldImgUrl =  imgOnModal.src.split("=")[1]
+
+
+            console.log(oldImgUrl + 1);
+
+            console.log(imgOnModal.src = imgOnModal.src + imgOnModal.src.split("=")[1] + "1")
+
+            
+            
+        })
+
+        right.addEventListener('click', () => {
+            console.log("right")
         })
 
         } else {

@@ -73,10 +73,11 @@
         flex-direction: row;
         align-items: center;
         position: absolute;
-        left: 78vw;
+
         margin-top: 2%;
         font-size: 3em;
-        color: $almost-black;
+        padding: .1em;
+        color: transparentize($almost-black, .5);
 
         i {
             cursor: pointer;
@@ -106,7 +107,7 @@
         }
 
         img {
-            width: 80%;
+            max-width: 80%;
             height: auto;
         }
     }
