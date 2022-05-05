@@ -12,7 +12,8 @@
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  background-color: #585858; }
+  background-color: #585858;
+  background-image: url("/assets/img/"); }
 
 a {
   text-decoration: none; }
