@@ -33,8 +33,11 @@ main {
     text-align: left;
     line-height: 1.4em;
 
+
     article {
         margin-top: 4.5em;
+        background-color: darken($small-box, 10%);
+        padding: 1.2em;
     }
 
     h1 {
@@ -53,8 +56,9 @@ main {
 }
 
     .desc {
-        width: 20em;
+        width: 18em;
         color: $white;
+
     }
     
     // .contact-button {

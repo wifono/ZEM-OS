@@ -22,17 +22,17 @@
             animation-duration: .9s;
         }
 
-        box-shadow: 0 0 1em lighten($almost-black, 19%);
+        // box-shadow: 0 0 1em lighten($almost-black, 19%);
 
         width: 20em;
         height: 15em;
-        background-color: $small-box;
+        background-color: darken($small-box, 10%);
         margin-bottom: 3em;
 
         .icon {
             text-align: center;
             margin-top: -1.2em;
-            background-color: $bg-color;
+            // background-color: $bg-color;
             border-radius: 50%;
             width: 2.5em;
             height: 2.5em;

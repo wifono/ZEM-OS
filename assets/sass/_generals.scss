@@ -12,6 +12,10 @@
 
 body {
     background-color: $bg-color;
+    background-image: url("/assets/img/bg-bager1.png");
+    background-size: 115%;
+    background-position-y: -20em;
+    background-attachment: fixed;
 }
 
 a {

@@ -12,7 +12,11 @@
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  background-color: #585858; }
+  background-color: #585858;
+  background-image: url("/assets/img/bg-bager1.png");
+  background-size: 115%;
+  background-position-y: -20em;
+  background-attachment: fixed; }
 
 a {
   text-decoration: none; }
@@ -86,7 +90,9 @@ main {
   text-align: left;
   line-height: 1.4em; }
   .sidebar article {
-    margin-top: 4.5em; }
+    margin-top: 4.5em;
+    background-color: rgba(42, 42, 42, 0.6235294118);
+    padding: 1.2em; }
   .sidebar h1 {
     font-size: .9em;
     font-weight: 300;
@@ -97,7 +103,7 @@ main {
     font-weight: 300; }
 
 .desc {
-  width: 20em;
+  width: 18em;
   color: aliceblue; }
 
 .boxes {
@@ -113,10 +119,9 @@ main {
     align-items: center;
     animation-duration: .7s;
     position: relative;
-    box-shadow: 0 0 1em #515151;
     width: 20em;
     height: 15em;
-    background-color: #4343439f;
+    background-color: rgba(42, 42, 42, 0.6235294118);
     margin-bottom: 3em; }
     .boxes .small-box:nth-of-type(2) {
       animation-duration: .8s; }
@@ -125,7 +130,6 @@ main {
     .boxes .small-box .icon {
       text-align: center;
       margin-top: -1.2em;
-      background-color: #585858;
       border-radius: 50%;
       width: 2.5em;
       height: 2.5em; }
@@ -261,13 +265,22 @@ a {
   flex-direction: column;
   align-items: center;
   height: 45em;
-  background-color: #434343;
+  background-color: #575757;
   background-image: url("/assets/img/big-logo.svg");
   background-size: 100.5%;
   background-repeat: no-repeat;
   position: center 0px; }
+  .services span {
+    color: #d9d9d9;
+    font-weight: 300;
+    width: 60%;
+    margin-top: 3em;
+    text-align: center;
+    font-size: 1.2em; }
+    .services span:nth-child(4) {
+      margin: 1.5em; }
   .services h1 {
-    color: #FEDD00;
+    color: #d8bc00;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 300; }
@@ -290,6 +303,24 @@ a {
       color: #FEDD00; }
       .services .services-list a:hover, .services .services-list a:active, .services .services-list a:target {
         color: #0AAEF3; }
+
+.left-side h1,
+.right-side h1 {
+  color: #cbb100; }
+
+.pricelist {
+  background-color: #494949;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9; }
+  .pricelist h1 {
+    color: #d8bc00;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 3em 0 2em 0; }
 
 .gallery-main {
   margin: 0;

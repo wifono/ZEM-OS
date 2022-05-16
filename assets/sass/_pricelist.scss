@@ -1,0 +1,19 @@
+.pricelist {
+    background-color: darken($bg-color, 6%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: darken(white, 15%);
+
+h1 {
+    color: darken($yellow, 7.5%);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 3em 0 2em 0;
+}
+
+}
