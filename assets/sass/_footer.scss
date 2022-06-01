@@ -15,7 +15,7 @@ footer {
         text-transform: uppercase;
         font-size: 1.1em;
         font-weight: 300;
-        color: gray;
+        color: rgb(190, 190, 190);
     }
 
     ul {
@@ -23,13 +23,13 @@ footer {
         font-size: .9em;
 
         li {
-            color: lighten($almost-black, 5%);
+            color: $almost-black;
             padding: .1em 0em;
             
 
             a {
                 text-decoration: none;
-                color: darken(gray, 5%);
+                color: darken(rgb(97, 97, 97), 5%);
             }
         }
     }
@@ -39,6 +39,7 @@ footer {
 .foot-contacts:hover,
 .created-by:hover {
     h1 {
+        font-weight: 300;
         color: darken($yellow, 5%);
         @include transition();
     }

@@ -27,7 +27,6 @@
         height: 100%;
     }
 
-}
 
 a {
     color: $almost-black;
@@ -39,6 +38,9 @@ a {
         @include transition();
     }
 }
+}
+
+
 
 .contact-list {
 
