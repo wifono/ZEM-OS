@@ -155,6 +155,13 @@ if (window.innerWidth > 750) {
 //     bobcatSpec.style.display = `none`
 // })
 
+document.addEventListener("DOMContentLoaded", () => {
+    const anchor = document.querySelectorAll("nav a");
+
+    anchor.forEach(a => {
+        a.classList.remove("active");
+    })
+})
 
 if(window.location.pathname === "/index.html" || window.location.pathname == "/") {
    console.log("123");
