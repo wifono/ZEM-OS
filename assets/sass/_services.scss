@@ -9,47 +9,85 @@
     
     background-color: $header-color;
     background-image: url("/assets/img/big-logo.svg");
-    background-size: 100.5% ;
+    background-size: 100.5%;
     background-repeat: no-repeat;
     position: center 0px;
+
 
 
     h1 {
         color: $yellow;
         text-transform: uppercase;
-        font-size: 1.2em;
-        font-weight: 300;
+        font-size: 1.8em;
+        font-weight: 600;
+
     }
 
     .services-title {
-        margin-top: 4em;
-        margin-bottom: 1.5em;
-        font-size: 2em;
+        margin-top: 3em;
+        text-decoration: underline;
+        text-underline-offset: .2em;
+        text-decoration-thickness: .05em;
+        font-size: 2.5em;
     }
 
     .services-list {
         display: flex;
-        margin-top: 3em;
-        margin-bottom: 15em;
-        gap: 10em;
-        width: 60vw;
-        line-height: 1.7em;
+        margin-top: 12em;
+        margin-bottom: 4em;
+        gap: 12em;
+        width: 74vw;
+        justify-content: space-around;
 
         color: $white;
+        font-size: 1.1em;
         font-weight: 300;
         text-align: left;
 
 
-        a {
-            text-decoration: none;
-            color: $yellow;
-            
-            &:hover,
-            &:active,
-            &:target {
-                color: $hover;
-                @include transition();
+        ul {
+            list-style-type:none;
+            margin-top: .5em;
+            margin-left: 1.3em;
+
+            li::before {
+                content: "•";
+                color:$yellow;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
             }
+        }
+     
+    }
+
+    .left-side,
+    .right-side {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+    #serviceAnchor {
+        color: $white;
+        font-size: 1.1em;
+        border: 2px solid $white;
+        border-radius: 1.5em;
+        padding: .5em 1em;
+
+        margin-top: 1.2em;
+        margin-left: 1em;
+        margin-bottom: 8em;
+
+        &:hover,
+        &:active {
+            color: $almost-black;
+            background-color: $yellow;
+            border: $yellow 2px solid;
+            @include transition();
         }
     }
 
