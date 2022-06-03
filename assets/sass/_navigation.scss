@@ -1,31 +1,37 @@
 nav {
     display: flex;
     gap: 1.5em;
+    
 
     ul {
         display: flex;
-        gap: 1.2em;
-        font-weight: 300;
+        margin-left: 44vw;
+        
+        font-weight: 400;
         align-items: center;
         justify-content: center;
     }
 
     li {
         list-style-type: none;
-        font-size: .75em;
+        font-size: .9em;
 
         a{
             color: $white; 
-               
+            padding: 1.35em 2em;
+            
             &:hover,
             &:active {
-            color: $hover;
+            color: lighten($almost-black, 5%);
+            font-weight: 400;
+            background: $yellow;
             @include transition();
             }
     }
 
     .active {
-        color: $yellow;
+        color: lighten($almost-black, 5%);
+        background: $yellow;
     }
 }
 }
@@ -35,4 +41,60 @@ nav {
 .hamburgermenu {
     display: none;
     @include transition();
+}
+
+@media screen and (max-width: 1055px) {
+    nav {
+        li {
+            a {
+            padding: 1.35em 1.7em;
+        }
+}
+  
+    }    
+}
+
+
+@media screen and (max-width: 1030px) {
+    nav {
+        li {
+            a {
+            padding: 1.35em 1.6em;
+        }
+}
+  
+    }    
+}
+
+@media screen and (max-width: 960px) {
+    nav {
+
+        ul {
+            margin-left: 40vw;
+        }
+
+        li {
+            a {
+                padding: 1.35em 1.4em;
+            }
+        }
+       
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+    nav {
+
+        ul {
+            margin-left: 38vw;
+        }
+
+        li {
+            a {
+                padding: 1.35em 1.2em;
+            }
+        }
+       
+    }
 }

@@ -9,11 +9,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ZEM-OS | Zemné a výkopové práce, preprava materiálu</title>
-        <meta name="description" content="">
+        <meta name="description" content="Zem-os, výkopové práce, preprava materiálu, šala, bager, bobcat, zem">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="/assets/img/logo-yellow.png">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
@@ -23,12 +24,12 @@
         <header>
             <img class="nav-logo animate__fadeIn animate__animated" src="assets/img/NAV-LOGO.png" alt="Logo here:)"  onclick="location.href = 'index.html' ">
             <nav class="animate__fadeIn animate__animated">
-                <ul>
-                    <li><a href="index.html">Domov</a></li>
-                    <li><a href="#">Služby</a></li>
-                    <li><a href="#">Cenník</a></li>
-                    <li><a href="#">Kontakty</a></li>
-                    <li><a href="gallery.html">Galéria</a></li>
+                <ul id="navbar">
+                    <li><a class="domov" id="hmb" href="#">Domov</a></li>
+                    <li><a class="sluzby" id="smb" href="#servicesArticle">Služby</a></li>
+                    <li><a href="cennik.html">Cenník</a></li>
+                    <li><a href="technika.html">Technika</a></li>
+                    <li><a class="kontakty"  id="cmb" href="#contactArticle">Kontakty</a></li>
                 </ul>
             </nav>
 
@@ -38,29 +39,29 @@
             </div>
             <div class="hamburgermenu animate__fadeIn animate__animated">
                 <ul>
-                    <li><a href="index.html">Domov</a></li>
-                    <li><a href="#">Služby</a></li>
-                    <li><a href="#">Cenník</a></li>
-                    <li><a href="#">Kontakty</a></li>
-                    <li><a href="gallery.html">Galéria</a></li>
+                    <li><a class="domov" href="index.html">Domov</a></li>
+                    <li><a class="sluzby" href="#servicesArticle">Služby</a></li>
+                    <li><a href="cennik.html">Cenník</a></li>
+                    <li><a href="technika.html">Technika</a></li>
+                    <li><a class="kontakty" href="#contactArticle">Kontakty</a></li>
                 </ul>
             </div>
         </header>
 
+    <section id="domov">
         <main>
-            <div class="big-logo" onclick="location.href = 'index.html' ">
+            <div class="big-logo" onclick="location.href = 'index.html'">
                 <img class="animate__fadeIn animate__animated" src="assets/img/LOGO.png" alt="Logo here:)" onclick="location.href='#'">
             </div>
 
             <div class="sidebar animate__fadeIn animate__animated">
-                <article>
-                    <h1>O nás</h1>
+                <article id="homeArticle">
+                    <h1>Víta vás Zem-os!</h1>
 
                     <div class="desc">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Possimus quas, dignissimos, quo repellendus error reprehenderit
-                        quibusdam quod natus earum sunt unde iste adipisci voluptas corrupti 
-                        tempora perspiciatis illo beatae libero.</p>
+                    <p>Naša spoločnosť je zameraná na zemné a výkopové práce, okrem toho poskytujeme aj prepravu materiálu - prevažne sypkého.
+                        Náš tím je spoľahlivý a vždy dokončí prácu za akýchkoľvek podmienok. Pracujeme nepretržite aj cez víkendy alebo sviatky.
+                    </p>
                     </div>
                     
                     <!-- <div class="contact-button">
@@ -70,10 +71,9 @@
                 </article>
             </div>
 
-
-          
         </main>
-           
+       
+   
         <article class="articlebox">
             <div class="boxes">
                 <div class="small-box animate__fadeIn animate__animated">
@@ -81,7 +81,7 @@
                         <i class="fa-regular fa-circle-question"></i>
                     </div>  
                     <h1>Čo ponúkame?</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt cupiditate reprehenderit rem nemo!</p>
+                    <p>Ponúkame zemné a výkopové práce s minibagrom a prepravu materiálu - najmä sypkých materiálov.</p>
                 </div>
 
                 <div class="small-box animate__fadeIn animate__animated">
@@ -89,7 +89,7 @@
                         <i class="fa-regular fa-circle-check"></i>
                     </div>
                     <h1>Garancia kvality</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt cupiditate reprehenderit rem nemo!</p>
+                    <p>Garantujeme dokončenie práce za akýchkoľvek podmienok - aj počas víkendov a sviatkov.</p>
                 </div>
 
                 <div class="small-box animate__fadeIn animate__animated">
@@ -97,57 +97,71 @@
                         <i class="fa-regular fa-circle-user"></i>
                     </div>
                     <h1>Priateľský prístup</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt cupiditate reprehenderit rem nemo!</p>
+                    <p>Náš tím garantuje priateľský, ľudský a profesionálny prístup ku klientovi.</p>
                 </div>
 
             </div>
         </article>
-
-        <article class="services">
-            <h1 class="services-title animate__fadeIn animate__animated">Služby</h1>
+     </section> 
+ 
+    <section id="sluzby">
+        <article id="servicesArticle" class="services">
 
         <div class="services-list animate__fadeIn animate__animated">
            <div class="left-side">
-               <h1>Výkopové práce</h1>
+               <h1>Zemné a výkopové práce</h1>
                
                <ul>
-                    <li>fsda</li>
-                    <li>ffsda</li>
-                    <li>hgggdf</li>
-                    <li>tretre</li>
-                    <li>rewrew</li>
-                    <li>ewqeqw</li>
+                   <li>odvoz zeminy</li>
+                   <li>výkop základov pre domy, chaty</li>
+                   <li>prípravné stavebné práce</li>
+                   <li>úpravy svahov - svahovanie</li>
+                   <li>výkop základov pre plot, múr, chodník, cestu...</li>
+                   <li>výkop jám rôznych rozmerov - pivnice, šachty</li>
                </ul>
 
             </div>
 
                <div class="right-side">
                    <h1>Preprava materiálu</h1>
-                   <ul>
-                    <li>56</li>
-                    <li>21</li>
-                    <li>657</li>
-                    <li>789</li>
-                    <li>15</li>
-                    <li>98</li> 
-                   </ul>
 
+                    <ul>
+                        <li>preprava piesku</li>
+                        <li>prevoz zeminy</li>
+                        <li>prevoz škáry</li>
+                        <li>prevoz paliet</li>
+                        <li>preprava sypkých materiálov</li>
+                        <li>preprava štrku a iného kameniva</li>
+                    </ul>
+                    
                </div>
            </div>
 
+           <a id="serviceAnchor" href="#">Zisti viac</a>
+
         </article>
+    </section>        
 
-        <article class="contacts">
+    <section id="kontakty">
+        <article id="contactArticle" class="contacts">
             <div class="flex-container">
-            <div class="contact-list">
-                <h1>Kontakty</h1>
-                <ul>
-                    <li>e-mail: <a href="#">info@zem-os.sk</a> </li>
-                    <li>telefón: <a href="#">0907 346 773</a> </li>
-                </ul>
-            </div>
 
-            <div class="contact-form">
+                <section class="contactsSection">
+                <div class="contact-list">
+                    <h1>Kontakty</h1>
+                    <ul>
+                        <li>E-mail: <a href="#">info@zem-os.sk</a> </li>
+                        <li>Telefón: <a href="#">+421 907 346 773</a> </li>
+                        <li>Mesto: <a href="#">Šaľa</a></li>
+                    </ul>
+                </div>
+                </section>
+
+                <div class="map"> 
+                    <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85191.26690792567!2d17.824268857068805!3d48.14442700542369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b6d443077b4f9%3A0x400f7d1c696ed20!2zxaBhxL5h!5e0!3m2!1ssk!2ssk!4v1654104041692!5m2!1ssk!2ssk" width="1000" height="600" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+                </div> 
+
+            <!-- <div class="contact-form">
                 <h1>Kontaktný formulár</h1>
                 <p>V prípade otázok nás neváhajte kontaktovať prostredníctvom kontaktného formuláru.</p>
                 <form action="post">
@@ -159,11 +173,13 @@
                 <input type="submit" name="submit">
                 </form>
 
-                <span>*Polia označené hviezdičkou sú povinné.</span>
+                <span>*Polia označené hviezdičkou sú povinné.</span>                
                 <span>Odoslaním kontaktného formuláru potvrdzujete, že ste sa oboznámili s <a href="#">Informáciami o spracovaní osobných údajov</a> a súhlasíte s ich spracovaním.</span>
-            </div>
+            </div> -->
+
         </div>
         </article>
+    </section>
 
         <footer>
             <div class="flex-footer">
@@ -171,11 +187,11 @@
                     <h1>Navigácia</h1>
                             <ul>
                             <li><a href="#">Domov</a></li>
-                            <li><a href="#">Služby</a></li>
-                            <li><a href="#">Cenník</a></li>
-                            <li><a href="#">Kontakty</a></li>
-                            <li><a href="#">Galéria</a></li>
-                            <li><a href="#">GDPR</a></li>
+                            <li><a href="#serviceArticle">Služby</a></li>
+                            <li><a href="cennik.html">Cenník</a></li>
+                            <li><a href="#contactArticle">Kontakty</a></li>
+                            <li><a href="stroje.html">Stroje</a></li>
+                            <li><a href="gdpr.html">GDPR</a></li>
                             </ul>
                 </div>
 
@@ -192,7 +208,6 @@
                 <h1>Vytvoril a spravuje</h1>
                 <ul>
                     <li><a href="#">Daniel Tršťanský</a></li>
-                    <li><a href="#">Freonnet</a></li>
                 </ul>
             </div>
             </div>

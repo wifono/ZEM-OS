@@ -5,14 +5,13 @@ header {
     position: fixed;
     width: 100%;
     z-index: 22222;
-    box-shadow: 0 0 .5em lighten($almost-black, 8%);
+    // box-shadow: 0 0 .5em lighten($almost-black, 20%);
 
     height: 3.70em;
     top: 0;
 
-    background-color: rgba($header-color, .8);
+    background-color: rgba($header-color, .9);
 
-    // box-shadow: lighten($almost-black, 15%) 0 0 1em;
 
     img {
     width: 9em;

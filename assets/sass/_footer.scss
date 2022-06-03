@@ -1,21 +1,24 @@
 footer {
+    background-color: $header-color;
+ 
 
     .flex-footer {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
-        gap: 4em;
+        gap: 6em;
         padding: 2.5em;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        margin-top: -.4em;
+        background-color: $header-color;   
+        margin-bottom: 0;
     }
 
     h1 {
         text-transform: uppercase;
         font-size: 1.1em;
         font-weight: 300;
-        color: gray;
+        color: $yellow;
     }
 
     ul {
@@ -23,13 +26,13 @@ footer {
         font-size: .9em;
 
         li {
-            color: lighten($almost-black, 5%);
+            color: $almost-black;
             padding: .1em 0em;
             
 
             a {
                 text-decoration: none;
-                color: darken(gray, 5%);
+                color: darken($white, 5%);
             }
         }
     }
@@ -38,18 +41,13 @@ footer {
 .foot-nav:hover,
 .foot-contacts:hover,
 .created-by:hover {
-    h1 {
-        color: darken($yellow, 5%);
-        @include transition();
-    }
 
     a {
-        color: $white;
-        @include transition();
+    
 
         &:hover,
         &:active {
-            color: $hover;
+            color: $yellow;
             @include transition();
             font-weight: 400;
         }

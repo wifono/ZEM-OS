@@ -1,59 +1,91 @@
 .contacts {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    background: $bg-color;
+    width: 100%;
 
-    height: 43em;
-
-    background: $contact-button;
+    // background-image: url("/assets/img/big-logo.svg");
+    // background-size: 100.5% ;
+    // background-repeat: no-repeat;
+    // position: center 0px;
+    // background-position-x: -55em;
+    // background-position-y: -55em;
 
     h1 {
-        color: $almost-black;
-        font-weight: 400;
+        color: $yellow;
+        font-weight: 600;
         text-transform: uppercase;
-        font-size: 1.2em;
+        font-size: 2.1em;
 
         margin-top: 3em;
     }
 
     .flex-container {
+        
         display: flex;
+        align-items: center;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 15em;
-        margin-top: 3em;
-        height: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
-}
-
-a {
-    color: $almost-black;
-    
-    &:hover,
-    &:active,
-    &:focus {
-        color: $hover;
-        @include transition();
+    a {
+        color: $white;
+        
+        &:hover,
+        &:active,
+        &:focus {
+            color: $hover;
+            @include transition();
+        }
     }
 }
+
 
 .contact-list {
+    display: inline-block;
+    text-align: left;
+    align-self: center;
+    margin-left: 2em;
 
     ul {
         display: flex;
         flex-direction: column;   
-        margin-top: .5em;
         font-weight: 400;
+        font-size: 1.1em;
+            margin-left: 1em;
     }
 
     li {
         list-style-type: none;
-        color: lighten($almost-black, 10%);
+        color: $white;
+
+
+        &::before {
+            content: "•";
+            color:$yellow;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+
+    h1 {
+        margin: 0;
+        margin-bottom: .4em;
+        text-decoration: underline;
+        text-underline-offset: .30em;
+        text-decoration-thickness: .09em;
     }
 }
+
+
+.contactsSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .contact-form {
     display: flex;
@@ -166,4 +198,3 @@ a {
         }
     }
 }
-

@@ -1,48 +1,32 @@
-@media screen and (max-width: 1100px) {
-    
-    main {
-        margin-top: 2em;
-        padding: 2em;
+// @media screen and (max-width: 1555px) {
 
+//     .boxes {
+//         .small-box {
+//         width: 20em;
+//     }
+//     }
 
-        img {
-            width: 100%;
+// }
+
+@media screen and (max-width:1430px) {
+
+    .contacts {
+        .flex-container {
+            flex-direction: column;
+            margin-top: 5em;
+
         }
     }
+
 }
 
 @media screen and (max-width: 1041px) {
     
     main {
         flex-direction: column;
-        margin: 0;
-        padding: 0;
-        gap: 0;
-        margin-top: 13%;
+        margin-top: 10em;
 
-        align-items: center;
-        justify-content: center;
 
-        img {
-            width: 400px;
-        }
-
-        .sidebar {
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-
-            .desc {
-                width: 60vw;
-                text-align: center;
-            }
-            
-            article {
-                  text-align: center;
-
-                  margin: 0;
-              }
-        }
     }
 
     .boxes {
@@ -89,10 +73,18 @@
 
         .services-list {
             flex-direction: column;
-            gap: 3vh;
-            align-self: flex-start;
-            margin-left: 15vw;
+            gap: 8vh;
+            align-self: center;
+            justify-content: center;
+            margin-top: 5em;
+            margin-bottom: 0;
+
         }
+
+        #serviceAnchor {
+            margin: 5vh;
+        }
+
     }
 
     .contacts {
@@ -172,3 +164,4 @@
     }
 
 }
+
