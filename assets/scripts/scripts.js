@@ -156,8 +156,8 @@ if (window.innerWidth > 750) {
 // })
 
 
-if(window.location.pathname === "/index.html") {
-   
+if(window.location.pathname === "/index.html" || window.location.pathname == "/") {
+   console.log("123");
     let serviceMenuButton = document.getElementById("smb")
     let serviceArticle = document.getElementById("sluzby")
 
