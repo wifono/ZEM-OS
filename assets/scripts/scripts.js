@@ -155,26 +155,18 @@ if (window.innerWidth > 750) {
 //     bobcatSpec.style.display = `none`
 // })
 
-document.addEventListener("DOMContentLoaded", () => {
-    const anchor = document.querySelectorAll("nav a");
-
-    anchor.forEach(a => {
-        a.classList.remove("active");
-    })
-})
-
-if(window.location.pathname === "/index.html" || window.location.pathname == "/") {
-   console.log("123");
-    let serviceMenuButton = document.getElementById("smb")
-    let serviceArticle = document.getElementById("sluzby")
+if(window.location.pathname === "/index.html" || window.location.pathname === "/") {
+   
+    let serviceMenuButton = document.getElementById("smb");
+    let serviceArticle = document.getElementById("sluzby");
 
     serviceMenuButton.addEventListener('click', (e) => {
         e.preventDefault();
         serviceArticle.scrollIntoView();
     })
 
-    let contactMenuButton = document.getElementById("cmb")
-    let contactArticle = document.getElementById("contactArticle")
+    let contactMenuButton = document.getElementById("cmb");
+    let contactArticle = document.getElementById("contactArticle");
 
     contactMenuButton.addEventListener("click", (e) => {
         e.preventDefault();
@@ -208,19 +200,18 @@ window.addEventListener("scroll", () => {
     anchor.forEach(a => {
         a.classList.remove("active");
         if( a.classList.contains(current)) {
-            a.classList.add("active")
+            a.classList.add("active");
         }
     })
 })
 }
 
-if(window.location.pathname !== "/index.html") {
+if(window.location.pathname !== "/index.html" && window.location.pathname !== "/") {
 
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav a').forEach(link => {
     if(link.href.includes(`${activePage}`)){
-        link.classList.add('active')
+        link.classList.add('active');
     };
 })
 }
-
