@@ -1,21 +1,20 @@
 main {
     
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 5em;
 
     margin: 3em;
-    margin-top: 13em;
+    margin-top: 12em;
     margin-bottom: 8em;
     height: auto;
-    position: relative;
+
 }
 
 .big-logo {
 
     height: auto;
-    margin-left: .5em;
     
     img {
         max-width: 33.5em;
@@ -32,8 +31,7 @@ main {
     
 
     article {
-        margin-top: 5.3em;
-        width: 35em;
+        width: 33em;
     }
 
     h1 {
@@ -46,8 +44,9 @@ main {
     p {
         font-size: 1.05em;
         font-weight: 400;
-        // line-height: 1.8em;
+        line-height: 1.7em;
         text-align: justify;
+
     }
 
 }

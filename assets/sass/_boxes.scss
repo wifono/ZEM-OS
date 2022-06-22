@@ -52,12 +52,13 @@
 
         p {
             // color: $white;
-            color: #444444;            
-            font-weight: 500;
+            color: $white;           
+            font-weight: 400;
             text-align: center;
             padding: 1.5em;
             font-size: 1em;
             margin-bottom: 2em;
+            line-height: 1.65em;
         }
 
     }

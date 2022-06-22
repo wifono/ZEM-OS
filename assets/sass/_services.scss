@@ -43,6 +43,7 @@
         font-size: 1.1em;
         font-weight: 300;
         text-align: left;
+        line-height: 2em;
 
 
         ul {
@@ -91,4 +92,101 @@
         }
     }
 
+}
+
+// Služby podstránka, po kliknutí na Zisti viac.
+
+#sluzby {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.5em;
+
+    h1 {
+        color: $yellow;
+    }
+}
+
+.sluzbyMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 73vw;
+    gap: 12em;
+
+    h1 {
+        color: $yellow;
+        margin: .5em 0;
+    }
+
+    p {
+        color: $white;
+    }
+
+    a {
+        color: $yellow;
+
+        &:hover,
+        &:active {
+            color: lighten($hover, 30%);
+            @include transition();
+        }
+    }
+
+    ul {
+        color: $white;
+        margin-top: 2em;
+        margin-left: 1.5em;
+        list-style-type: none;
+        font-size: .95em;
+
+        li::before {
+            content: "•";
+            color:$yellow;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+
+}
+
+.headingbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // box-shadow: 0 0 10px darken($header-color , .5%);
+    border-bottom: 2px solid darken($header-color, 2%);
+    
+
+    margin-top: 3.71em;
+
+    background-color: darken($header-color, 1%);
+    width: 100%;
+    height: auto;
+
+    h1 {
+        font-size: 1.7em;
+        font-weight: 500;
+        padding: 1em 0 1em 0;
+        color: $yellow;
+        margin-left: 13.5vw;
+    }
+    
+}
+
+#PriceListAnchor {
+    color: $white;
+    font-size: 1.1em;
+    border: 2px solid $white;
+    border-radius: 1.5em;
+    padding: .5em 1em;
+
+    margin-top: 0em;
+
+    &:hover,
+    &:active {
+        color: $almost-black;
+        background-color: $yellow;
+        border: $yellow 2px solid;
+        @include transition();
+    }
 }
