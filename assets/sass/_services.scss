@@ -12,13 +12,15 @@
     background-size: 100.5%;
     background-repeat: no-repeat;
     position: center 0px;
+    border-bottom: 2px solid darken($header-color, 3%);
+    border-top: 2px solid darken($header-color, 3%);
 
 
 
     h1 {
         color: $yellow;
-        text-transform: uppercase;
-        font-size: 1.8em;
+        // text-transform: uppercase;
+        font-size: 1.4em;
         font-weight: 600;
 
     }
@@ -40,7 +42,7 @@
         justify-content: space-around;
 
         color: $white;
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 300;
         text-align: left;
         line-height: 2em;
@@ -80,7 +82,6 @@
         padding: .5em 1em;
 
         margin-top: 1.2em;
-        margin-left: 1em;
         margin-bottom: 8em;
 
         &:hover,
@@ -182,6 +183,7 @@
 
     margin-top: 0em;
 
+
     &:hover,
     &:active {
         color: $almost-black;
@@ -189,4 +191,9 @@
         border: $yellow 2px solid;
         @include transition();
     }
+}
+
+.sluzbySecondPage {
+    margin: 5em;
+    padding: 0;
 }

@@ -25,7 +25,7 @@
             <nav class="animate__fadeIn animate__animated">
                 <ul>
                     <li><a id="hmb" href="index.html">Domov</a></li>
-                    <li><a id="smb" href="index.html#servicesArticle">Služby</a></li>
+                    <li><a id="smb" href="sluzby.html">Služby</a></li>
                     <li><a href="#">Cenník</a></li>
                     <li><a href="technika.html">Technika</a></li>
                     <li><a id="cmb" href="index.html#contactArticle">Kontakty</a></li>
@@ -38,31 +38,51 @@
             </div>
             <div class="hamburgermenu animate__fadeIn animate__animated">
                 <ul>
-                    <li><a href="index.html">Domov</a></li>
-                    <li><a href="#">Služby</a></li>
+                    <li><a id="hmb" href="index.html">Domov</a></li>
+                    <li><a id="smb" href="sluzby.html">Služby</a></li>
                     <li><a href="#">Cenník</a></li>
                     <li><a href="technika.html">Technika</a></li>
-                    <li><a href="#">Kontakty</a></li>
+                    <li><a id="cmb" href="index.html#contactArticle">Kontakty</a></li>
                 </ul>
             </div>
         </header>
 
+        <div class="headingbox">
+            <h1>Cenník</h1>
+        </div>
+
         <main class="cennikMain animate__fadeIn animate__animated">
-
+    
             <article class="cennik">
-                <h1>Cenník</h1>
                 
-                <div class="cennikBody">
+                    <ul>
+                        <li>V prípade záujmu o naše služby vyplnte formulár na nezáväzné vypracovanie cenovej ponuky. </li>
+                        <li>Tabuľky na výpočet prepravy sypkých materiálov nájdete <a href="#">TU</a>.</li>
+                    </ul>
 
-                    <div class="vykopove-prace">
-                        <h2>Výkopové práce</h2>
-                    </div>
-                
-                    <div class="prepravaMaterialu">
-                        <h2>Preprava materiálu</h2>
+                    <div class="contact-form">
+                        <h1>Kontaktný formulár</h1>
+                        <form action="post">
+                        <select name="gender" id="gender">
+                            <option value="Pán">Pán</option>
+                            <option value="Pani">Pani</option>
+                        </select>
+                        <input type="text" name="email" placeholder="e-mail*" required> <br>
+                        
+                        <select name="service" id="service">
+                            <option value="Výkopové práce">Výkopové práce</option>
+                            <option value="Preprava materiálu">Preprava materiálu</option>
+                            <option value="Výkopové práce a preprava materiálu">Výkopové práce a preprava materiálu</option>
+                        </select>
+
+                        <input type="text" name="email-val" placeholder="potvrdenie e-mailu"><br>
+                        <textarea name="question" placeholder="Vaša otázka..." required></textarea> <br>
+                        <input type="submit" name="submit">
+                        </form>
+        
+                        <span>*Polia označené hviezdičkou sú povinné.</span>                
                     </div>
 
-                </div>
             </article>
 
         </main>
@@ -72,12 +92,11 @@
                 <div class="foot-nav">
                     <h1>Navigácia</h1>
                             <ul>
-                            <li><a href="#">Domov</a></li>
-                            <li><a href="#">Služby</a></li>
-                            <li><a href="#">Cenník</a></li>
-                            <li><a href="#">Kontakty</a></li>
-                            <li><a href="#">Galéria</a></li>
-                            <li><a href="#">GDPR</a></li>
+                                <li><a class="domov" id="hmb" href="#">Domov</a></li>
+                                <li><a class="sluzby" id="smb" href="#servicesArticle">Služby</a></li>
+                                <li><a href="cennik.html">Cenník</a></li>
+                                <li><a href="technika.html">Technika</a></li>
+                                <li><a class="kontakty"  id="cmb" href="#contactArticle">Kontakty</a></li>
                             </ul>
                 </div>
 
@@ -94,7 +113,6 @@
                 <h1>Vytvoril a spravuje</h1>
                 <ul>
                     <li><a href="#">Daniel Tršťanský</a></li>
-                    <li><a href="#">Freonnet</a></li>
                 </ul>
             </div>
             </div>

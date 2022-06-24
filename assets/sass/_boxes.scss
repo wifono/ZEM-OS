@@ -12,6 +12,7 @@
         flex-direction: column;
         align-items: center;
         animation-duration: .7s;
+        border: 2px solid darken($small-box, 20%);
 
         &:nth-of-type(2) {
             animation-duration: .8s;
@@ -26,7 +27,7 @@
         width: 22em;
         height: auto;
         background-color: rgba($small-box, .4);
-        margin-bottom: 10em;
+        margin-bottom: 5em;
 
         .icon {
             text-align: center;
@@ -38,7 +39,7 @@
 
         i {
             font-size: 3em;
-            color: $yellow;
+            color: darken(rgb(236, 236, 236), 5%);
             // text-shadow: 0 0 .4em darken($almost-black, 5%);
         }
 

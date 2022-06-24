@@ -6,6 +6,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
+        border-top: 2px solid darken($header-color, 3%);
 
         padding: 2.5em;
         margin-top: -.4em;
@@ -15,7 +16,7 @@ footer {
     }
 
     h1 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-size: 1.1em;
         font-weight: 300;
         color: $yellow;

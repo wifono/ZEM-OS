@@ -3,18 +3,7 @@
     padding: 0;
     width: 100%;
     height: auto;
-    margin-top: 3.7em;
     background: $contact-button;
-    flex-direction: column;
-    gap: 0;
-
-
-    h1 {
-        text-transform: uppercase;
-        font-weight: 300;
-        margin-top: 3em;
-    }
-
 
 
     .stroje {
@@ -45,6 +34,8 @@
             margin-bottom: .5em;
             opacity: .7;
 
+            border: 2px solid darken($contact-button, 8%);
+
             &:hover,
             &:active {
                 opacity: 1;
@@ -56,26 +47,19 @@
 
             }
             
-            h1 {
-                margin: 4em;
-                padding: .5em;
-                
-            }
 
             ul {
-                width: 95%;
+                width: 50%;
                 font-size: 1.2em;
                 list-style-type: none;
                 margin: .5em 0 3em 1.5em;
                 padding: 1em;
                 
-        
-
-                display: none;
 
                 span {
-                    color: $yellow;
-                    font-size: 1.2em;
+                    color: $almost-black;
+                    font-size: 2em;
+                    font-weight: 500;
                 }
                 
             }
