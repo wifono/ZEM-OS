@@ -12,6 +12,7 @@ html {
     font-family: $font;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,4 +21,8 @@ body {
 
 a {
     text-decoration: none;
+}
+
+img {
+    width: 100%;
 }

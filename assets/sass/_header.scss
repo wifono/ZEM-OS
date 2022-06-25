@@ -5,7 +5,9 @@ header {
     position: fixed;
     width: 100%;
     z-index: 22222;
-    // box-shadow: 0 0 .5em lighten($almost-black, 20%);
+    // box-shadow: 0 0 5px darken($header-color, 5%);
+    border-bottom: 1px solid darken($header-color, 3%);
+
 
     height: 3.70em;
     top: 0;

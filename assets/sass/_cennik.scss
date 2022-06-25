@@ -1,5 +1,162 @@
 .cennikMain {
     background-color: $contact-button;
     width: 100%;
-    margin: 3.75em 0;
+    margin: 0 ;
+}
+
+.cennik {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 5em;
+    gap: 5em;
+
+    ul {
+        width: 70%;
+        justify-self: end;
+        align-self: start;
+        margin-top: 5.5em;
+
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: darken($yellow, 25%);
+            font-weight: 500;
+        }
+    }
+
+    li:first-child {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        font-weight: 500;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+
+    span {
+        font-size: .8em;
+        font-weight: 300;
+        margin-top: .85em;
+        text-align: center;
+
+        &:nth-of-type(2) {
+            width: 90%;
+        }
+
+        a {
+            color: lighten($yellow, 10%);
+            font-weight: 500;
+
+            &:hover {
+                color: $hover;
+                @include transition();
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.1em;
+        color: $almost-black;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+
+    p {
+        width: 25em;
+        
+        font-weight: 300;
+        font-size: .9em;
+        margin-left: .1em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+
+        text-align: center;
+    }
+
+    form {
+        input {
+            background: darken($contact-button,8%);
+            border-radius: .7em;
+            // border: .05em solid lighten($almost-black, 30%);
+            height: 2.1em;
+            width: 14.70em;
+            margin: .20em;
+            padding: .2em;
+            text-align: center;
+            border: none;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: darken($contact-button, 10%);
+                @include transition();
+            }
+
+            &:nth-child(9) {
+                width: 8em;
+                height: 2.5em;
+                margin-left: 11.5em;
+                margin-top: .7em;
+
+                cursor: pointer;
+
+                &:hover,
+                &:active {
+                    background-color: $yellow;
+                    color: $almost-black;
+                    border: none;
+                    @include transition();
+                }
+
+            }
+        }
+
+        textarea {
+            margin-top: .2em;
+
+            background: darken($contact-button,5%);
+            border-radius: .7em;
+            padding: 1em;
+
+            width: 100%;
+            height: auto;
+            min-height: 13em;
+            resize:none;
+            border: none;
+
+            &:hover,
+            &:active {
+                background-color: darken($contact-button, 10%);
+                color: $almost-black;
+                @include transition();
+            }
+        }
+    }
+
+    select {
+        background: darken($contact-button,8%);
+        border-radius: .7em;
+        // border: .05em solid lighten($almost-black, 30%);
+        height: 2.1em;
+        width: 14.70em;
+        margin: .20em;
+        padding: .2em;
+        text-align: center;
+        border: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken($contact-button, 10%);
+            @include transition();
+        }
+    }
 }
