@@ -71,8 +71,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        width: 381.531px;
     }
 
+    .right-side {
+        padding-left: 2.5em;
+    }
 
     #serviceAnchor {
         color: $white;
@@ -110,7 +114,7 @@
 .sluzbyMain {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 73vw;
+    max-width: 64vw;
     gap: 12em;
 
     h1 {
@@ -167,7 +171,7 @@
     h1 {
         font-size: 1.7em;
         font-weight: 500;
-        padding: 1em 0 1em 0;
+        padding: 1em 0 1em 2.6em;
         color: $yellow;
         margin-left: 13.5vw;
     }

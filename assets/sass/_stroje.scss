@@ -4,12 +4,12 @@
     width: 100%;
     height: auto;
     background: $contact-button;
-
+    padding: 4em 0 7em 0;
 
     .stroje {
-        display: flex;
-        gap: 1em;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
 
         margin-top: 3em;
 
@@ -30,9 +30,9 @@
             align-items: center;
             justify-content: center;
             background: darken($contact-button, 5%);
-            padding: 2.5em 2em;
             margin-bottom: .5em;
-            opacity: .7;
+            opacity: .8;
+            
 
             border: 2px solid darken($contact-button, 8%);
 
@@ -41,24 +41,20 @@
                 opacity: 1;
                 @include transition();
             }
-
-            &:last-of-type {
-                margin-bottom: 10em;
-
-            }
             
 
             ul {
                 width: 50%;
-                font-size: 1.2em;
+                font-size: 1em;
                 list-style-type: none;
                 margin: .5em 0 3em 1.5em;
                 padding: 1em;
                 
+                
 
                 span {
                     color: $almost-black;
-                    font-size: 2em;
+                    font-size: 1.7em;
                     font-weight: 500;
                 }
                 
