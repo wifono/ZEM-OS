@@ -62,22 +62,22 @@
 
                     <div class="contact-form">
                         <h1>Kontaktný formulár</h1>
-                        <form onsubmit="sendEmail(); reset(); return false;">
+                        <form action="https://formsubmit.io/send/testmaildandy@gmail.com" method="POST">
                         <select name="gender" id="gender">
                             <option value="Pán">Pán</option>
                             <option value="Pani">Pani</option>
                         </select>
-                        <input id="email" type="text" name="email" placeholder="e-mail*" required> <br>
+                        <input type="text" name="email" placeholder="e-mail*" required> <br>
                         
-                        <select name="service" id="serviceSelector">
-                            <option id="vykopovePrace" value="Výkopové práce">Výkopové práce</option>
-                            <option id="prepravaMaterialu" value="Preprava materiálu">Preprava materiálu</option>
-                            <option id="vykPreprava" value="Výkopové práce a preprava materiálu">Výkopové práce a preprava materiálu</option>
+                        <select name="service" id="service">
+                            <option value="Výkopové práce">Výkopové práce</option>
+                            <option value="Preprava materiálu">Preprava materiálu</option>
+                            <option value="Výkopové práce a preprava materiálu">Výkopové práce a preprava materiálu</option>
                         </select>
 
-                        <input id="otazka" type="text" name="email-val" placeholder="potvrdenie e-mailu"><br>
+                        <input type="text" name="email-val" placeholder="potvrdenie e-mailu"><br>
                         <textarea name="question" placeholder="Vaša otázka..." required></textarea> <br>
-                        <button type="submit" name="submit">Odoslať</button>
+                        <input type="submit" name="submit">
                         </form>
         
                         <span>*Polia označené hviezdičkou sú povinné.</span>                
@@ -121,22 +121,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-        <script>
-            function sendEmail() { 
-                Email.send({
-                    SecureToken: "ace4c0f8-d83a-453d-8042-12bbcab6959c",
-                    To : 'testmaildandy@gmail.com',
-                    From : document.getElementById('email').value,
-                    Subject : document.getElementById('serviceSelector').value,
-                    Body : document.getElementById('otazka').value
-                }).then(
-                message => alert(message)
-                );
-            }
-        </script>
-
+        
         <script src="assets/scripts/scripts.js" async defer></script>
     </body>
 </html>
