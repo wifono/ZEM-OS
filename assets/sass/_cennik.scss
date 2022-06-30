@@ -119,6 +119,29 @@
             }
         }
 
+        button {
+            background: darken($contact-button,8%);
+            border-radius: .7em;
+            // border: .05em solid lighten($almost-black, 30%);
+            width: 8em;
+            height: 2.5em;
+            margin-left: 11.5em;
+            margin-top: .7em;
+            margin: .20em;
+            padding: .2em;
+            text-align: center;
+            border: none;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $yellow;
+                color: $almost-black;
+                border: none;
+                @include transition();
+            }
+        }
+
         textarea {
             margin-top: .2em;
 

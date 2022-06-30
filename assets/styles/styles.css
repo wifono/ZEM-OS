@@ -544,6 +544,22 @@ main {
         color: #212121;
         border: none;
         transition: all .3s ease-in-out; }
+  .contact-form form button {
+    background: #b5b5b5;
+    border-radius: .7em;
+    width: 8em;
+    height: 2.5em;
+    margin-left: 11.5em;
+    margin-top: .7em;
+    margin: .20em;
+    padding: .2em;
+    text-align: center;
+    border: none; }
+    .contact-form form button:hover, .contact-form form button:active, .contact-form form button:focus {
+      background-color: #ffc600;
+      color: #212121;
+      border: none;
+      transition: all .3s ease-in-out; }
   .contact-form form textarea {
     margin-top: .2em;
     background: #bcbcbc;
