@@ -67,7 +67,7 @@ closeIcon[0].addEventListener('click', () => {
 })
 
 window.addEventListener('resize', () => {
-if (window.innerWidth > 750) {
+if (window.innerWidth > 870) {
     menu[0].style.display = `none`;
     closeIcon[0].style.display = `none`;
     menuIcon[0].style.display = `none`;

@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
 
-    gap: 4%;
+    gap: 5%;
 
     margin-top: 3em;
 
@@ -27,7 +27,7 @@
         width: 22em;
         height: auto;
         background-color: rgba($small-box, .4);
-        margin-bottom: 5em;
+        margin-bottom: 10em;
 
         .icon {
             text-align: center;
@@ -71,67 +71,3 @@
     }
 }
 
-@media screen and (max-width: 1550px) {
- 
-    .boxes {
-
-        .small-box {
-            width: 27vw;
-        }
-
-    }
-}
-
-
-@media screen and (max-width:915px) {
-
-    .boxes {
-        flex-direction: column;
-        
-
-        .small-box {
-            flex-direction: row;
-            align-items:center;
-            justify-content: space-evenly;
-            width:auto;
-            margin-bottom: 1vh;
-
-            &:nth-last-child(1) {
-                margin-bottom: 2em;
-            }
-
-            p {
-                margin: 0;
-                padding: 2.5em;
-                width: 45vw;
-                text-align: left;
-            }
-
-            h1 {
-                margin: 0;
-                margin-left: 5vw;
-            }
-
-            .icon {
-                margin: 0;
-                margin-left: 2.5em;
-            }
-        }
-    };
-}
-
-@media screen and (max-width: 897px) {
-
-    .boxes {
-        .small-box {
-            i {
-                font-size: 3em;
-            }
-
-            h1 {
-                font-size: 1em;
-            }
-        }
-
-    }
-}

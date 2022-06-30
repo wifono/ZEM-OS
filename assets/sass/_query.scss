@@ -1,120 +1,186 @@
-// @media screen and (max-width: 1600px) {
-//     .sidebar article {
+@media screen and (max-width:1700px) {
+    .boxes {
+        gap: 3vw;
+    }
+}
 
-//         h1 {
-//             font-size: 1.3em;
-//         }
+@media screen and (max-width: 1600px) {
+    
+    main {
+        gap: 6vw;
+    }
 
-//         p {
-//             font-size: .9em;
-//         }
-//     }
+    iframe {
+        max-width: 832px;
+    }
+}
 
-// }
 
-// @media screen and (max-width: 1555px) {
+@media screen and (max-width: 1550px) {
+    .boxes {
+        gap: 2vw;
+    }
+}
 
-//     .boxes {
-//         .small-box {
-//         width: 20em;
-//     }
-//     }
-
-// }
-
-@media screen and (max-width:1430px) {
-
-    .contacts {
-        .flex-container {
-            flex-direction: column;
-            margin-top: 5em;
-
+@media screen and (max-width:1380px) {
+    main {
+        .big-logo img {
+            max-width: 30em;
         }
     }
 
+    iframe {
+        max-width: 770px;
+    }
+
+    .contact-list {
+        margin-left: 0;
+    }
 }
 
-@media screen and (max-width: 1041px) {
-    
+@media screen and (max-width: 1250px) {
+
     main {
-        flex-direction: column;
-        margin-top: 10em;
+    
+        margin-bottom: 8em;
 
 
+        .big-logo img {
+            max-width: 27em;
+        }
     }
 
-    .boxes {
-        gap: .5%;
-        margin-top: 0;
-    }
 
-}
-
-@media screen and (max-width: 981px) {
-
-    .nav-logo {
-        left: 5%;
-    }
-
-    .big-logo {
-        margin-top: 3em;
-    }
-
-    .boxes {
-        width: 90%;
-        margin: 0;
-    }
-
-    .articlebox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3em;
+    iframe {
+        max-width: 690px;
     }
 
     .sidebar {
-        margin: 2em;
-        margin-bottom: 3em;
-        article {
-             flex-direction: column; 
+        margin-top: 2.5em;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .boxes {
+        .small-box {
+            width: 19em;
+        }
+    }
+}
+
+@media screen and (max-width:1170px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8em;
+
+        .big-logo img {
+            max-width: 33em;
+        }
+    }
+    
+    .sidebar {
+        margin: 0;
+
+        h1 {
+            // text-align: center;
+        }
+    }
+
+ 
+    .desc p {
+        // text-align: center;
+        margin-top: .5em;
+        line-height: 2em;
+    }
+
+    iframe {
+        max-width: 590px;
+    }
+
+    .boxes {
+        .small-box {
+            text-align: left;
         }
     }
 
     .services {
-        margin: 0;
-        padding: 0;
-        background-size: 130%;
-
-        .services-list {
-            flex-direction: column;
-            gap: 8vh;
-            align-self: center;
-            justify-content: center;
-            margin-top: 5em;
-            margin-bottom: 0;
-
-        }
 
         #serviceAnchor {
-            margin: 5vh;
-        }
-
-    }
-
-    .contacts {
-        
-        .flex-container {
-            justify-content: center;
-            gap: 2em;
-        }
-
-        .contact-form {
-            margin-right: -8vw;
+            margin-bottom: 5em;
         }
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width:1050px) {
+    header img {
+        left: 5%;
+    }
+
+    header ul {
+        margin-left: 35vw ;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    
+    .boxes {
+        gap: 1vw;
+        flex-direction: column;
+        align-items: center;
+
+    
+        .small-box {
+            margin-bottom: 0;
+            width: 95%;
+
+            &:last-child {
+                margin-bottom: 5em;
+            }
+        }
+    }
+
+    iframe {
+        max-width: 490px;
+    }
+
+    main {
+        margin-bottom: 5em;
+    }
+
+    .services {
+
+        background-attachment: fixed;
+
+        .services-list {
+            flex-direction: column;
+            gap: 5em;
+    }
+
+    .right-side {
+        padding: 0;
+    }
+    }
+
+
+}
+
+@media screen and (max-width:950px) {
+    iframe {
+        max-width: 490px;
+    }
+}
+
+@media screen and (max-width:920px) {
+
+    header ul {
+        margin-left: 30vw ;
+    }
+}
+
+@media screen and (max-width: 870px) {
     nav {
         display: none;
     }
@@ -177,5 +243,29 @@
         background-size: 180%;
     }
 
+}
+
+@media screen and (max-width:850px) {
+    .contacts {
+
+
+        .flex-container {
+            flex-direction: column;
+        }
+
+        .contact-list {
+            margin: 5em;
+        }
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    footer {
+        display: none;
+    }
 }
 

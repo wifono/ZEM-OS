@@ -62,22 +62,22 @@
 
                     <div class="contact-form">
                         <h1>Kontaktný formulár</h1>
-                        <form action="https://formsubmit.io/send/testmaildandy@gmail.com" method="POST">
-                        <select name="gender" id="gender">
+                        <form id="formular" action="https://formspree.io/f/myyoaalk" method="POST">
+                        <select name="Pohlavie" id="gender">
                             <option value="Pán">Pán</option>
                             <option value="Pani">Pani</option>
                         </select>
                         <input type="text" name="email" placeholder="e-mail*" required> <br>
                         
-                        <select name="service" id="service">
+                        <select name="Záujem_o" id="service">
                             <option value="Výkopové práce">Výkopové práce</option>
                             <option value="Preprava materiálu">Preprava materiálu</option>
                             <option value="Výkopové práce a preprava materiálu">Výkopové práce a preprava materiálu</option>
                         </select>
 
-                        <input type="text" name="email-val" placeholder="potvrdenie e-mailu"><br>
-                        <textarea name="question" placeholder="Vaša otázka..." required></textarea> <br>
-                        <input type="submit" name="submit">
+                        <input type="text" name="Overenie_emailu" placeholder="potvrdenie e-mailu"><br>
+                        <textarea id="my-form-status" name="Požiadavka" placeholder="Vaša požiadavka..." required></textarea> <br>
+                        <input type="submit" id="my-form-button">
                         </form>
         
                         <span>*Polia označené hviezdičkou sú povinné.</span>                
@@ -123,5 +123,39 @@
         <![endif]-->
         
         <script src="assets/scripts/scripts.js" async defer></script>
+
+        <script>
+            var form = document.getElementById("formular");
+            
+            async function handleSubmit(event) {
+              event.preventDefault();
+              var status = document.getElementById("my-form-status");
+              var data = new FormData(event.target);
+              fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+              }).then(response => {
+                if (response.ok) {
+                  status.innerHTML = "Ďakujeme! Vaša požiadavka bola odoslaná.";
+                  form.reset()
+                } else {
+                  response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                      status.innerHTML = "Vyskytol sa problém s odoslaním vašej požiadavky. Skúste to neskôr alebo nás kontaktujte prostredníctvom telefónneho čísla alebo mailu."
+                    }
+                  })
+                }
+              }).catch(error => {
+                status.innerHTML = "Vyskytol sa problém s odoslaním vašej požiadavky. Skúste to neskôr alebo nás kontaktujte prostredníctvom telefónneho čísla alebo mailu."
+              });
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
+
     </body>
 </html>
