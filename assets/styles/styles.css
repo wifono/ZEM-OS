@@ -286,7 +286,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 64vw;
-  gap: 12em; }
+  gap: 12%; }
   .sluzbyMain h1 {
     color: #ffc600;
     margin: .5em 0; }
@@ -324,7 +324,7 @@ main {
     font-weight: 500;
     padding: 1em 0 1em 2.6em;
     color: #ffc600;
-    margin-left: 13.5vw; }
+    margin-left: 12vw; }
 
 #PriceListAnchor {
   color: aliceblue;
@@ -602,8 +602,17 @@ footer {
   .boxes .small-box {
     text-align: left; }
 
-  .services #serviceAnchor {
-    margin-bottom: 5em; } }
+  .services {
+    background-image: none; }
+    .services #serviceAnchor {
+      margin-bottom: 5em; } }
+@media screen and (max-width: 1100px) {
+  .cennik {
+    display: flex;
+    flex-direction: column; }
+    .cennik ul {
+      justify-self: center;
+      align-self: center; } }
 @media screen and (max-width: 1050px) {
   header img {
     left: 5%; }
@@ -644,6 +653,9 @@ footer {
   nav {
     display: none; }
 
+  .cennik {
+    width: 100%; }
+
   .hamburger .menuicon,
   .hamburger .closemenu {
     background: none;
@@ -655,6 +667,14 @@ footer {
     .hamburger .closemenu:active,
     .hamburger .closemenu:focus {
       color: #ffc600; }
+
+  .sluzbyMain {
+    grid-template-columns: 1fr;
+    gap: 6%;
+    max-width: 100%; }
+
+  #PriceListAnchor {
+    margin-top: 3em; }
 
   .hamburger {
     display: block;
@@ -677,7 +697,13 @@ footer {
           color: #ffc600; }
 
   .services {
-    background-size: 180%; } }
+    background-size: 180%; }
+    .services .services-list {
+      width: 70%;
+      margin-top: 5em; }
+
+  .stroje {
+    margin: 2em; } }
 @media screen and (max-width: 850px) {
   .contacts .flex-container {
     flex-direction: column; }
@@ -691,6 +717,18 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0; } }
+@media screen and (max-width: 660px) {
+  #PriceListAnchor {
+    margin-top: 5em; }
+
+  .stroje-main .stroje .stroje-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .stroje-main .stroje .stroje-box ul {
+      width: 100%;
+      margin: 1em;
+      padding: 2em; } }
 @media screen and (max-width: 640px) {
   .sidebar article {
     display: flex;
@@ -710,6 +748,38 @@ footer {
     margin-left: -3em; }
 
   main {
-    margin-bottom: 3em; } }
+    margin-bottom: 3em; }
+
+  .services .services-list {
+    margin-top: 4em; }
+    .services .services-list .left-side, .services .services-list .right-side {
+      width: 98%; } }
+@media screen and (max-width: 490px) {
+  .cennik {
+    width: 80%; }
+    .cennik .contact-form {
+      width: 21em; }
+      .cennik .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .cennik .contact-form form br {
+          display: none; }
+        .cennik .contact-form form input:nth-child(9) {
+          margin-left: 0; } }
+@media screen and (max-width: 600px) {
+  .sluzby-podstranka {
+    margin: 2em; } }
+@media screen and (max-width: 405px) {
+  .contacts .contact-list {
+    margin: 0;
+    width: 100%;
+    margin: 3.5em; }
+
+  #PriceListAnchor {
+    margin-top: 8em; } }
+@media screen and (max-width: 350px) {
+  .cennik .contact-form {
+    width: 18em; } }
 
 /*# sourceMappingURL=styles.css.map */
