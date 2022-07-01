@@ -264,8 +264,44 @@
 }
 
 @media screen and (max-width:720px) {
+
     footer {
+        .flex-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width:640px) {
+    .sidebar article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 250px;
+        margin-top: 1em;
+    }
+
+    .desc {
         display: none;
+    }
+
+    .sidebar {
+        h1 {
+            text-align: center;
+        }
+    }
+.contactsSection {
+    .contact-list {
+        padding: 0;
+        margin-left: -3em;
+    }
+}
+
+    main {
+        margin-bottom: 3em;
     }
 }
 
