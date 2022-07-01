@@ -107,12 +107,26 @@
     }
 
     .services {
+        background-image: none;
 
         #serviceAnchor {
             margin-bottom: 5em;
         }
     }
 }
+
+@media screen and (max-width:1100px) {
+    .cennik {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}
+
 
 @media screen and (max-width:1050px) {
     header img {
@@ -185,6 +199,10 @@
         display: none;
     }
 
+    .cennik {
+        width: 100%;
+    }
+
     .hamburger {
 
         .menuicon,
@@ -201,6 +219,16 @@
             }
         }
 
+    }
+
+    .sluzbyMain {
+        grid-template-columns: 1fr;
+        gap: 6%;
+        max-width: 100%;
+    }
+
+    #PriceListAnchor {
+        margin-top: 3em;
     }
 
     .hamburger {
@@ -241,6 +269,15 @@
 
     .services {
         background-size: 180%;
+
+        .services-list {
+            width: 70%;
+            margin-top: 5em;
+        }
+    }
+
+    .stroje {
+        margin: 2em;
     }
 
 }
@@ -275,6 +312,26 @@
     }
 }
 
+@media screen and (max-width:660px) {
+    #PriceListAnchor {
+        margin-top: 5em;
+    }
+
+    .stroje-main .stroje .stroje-box {
+       
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                width: 100%;
+                margin: 1em;
+                padding: 2em;
+            }
+        }
+}
+
+
 @media screen and (max-width:640px) {
     .sidebar article {
         display: flex;
@@ -303,5 +360,81 @@
     main {
         margin-bottom: 3em;
     }
+
+    .services {
+        .services-list {
+        margin-top: 4em;
+
+        .left-side, .right-side {
+            width: 98%;
+        }
+        
+    }
+    }
+
 }
 
+@media screen and (max-width:490px) {
+    .cennik {
+        width: 80%;
+
+        .contact-form {
+            width: 21em;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                br {
+                    display: none;
+                }
+
+                input:nth-child(9) {
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .sluzby-podstranka {
+        margin: 2em;
+    }
+}
+
+@media screen and (max-width:451px) {
+
+}
+
+@media screen and (max-width:405px) {
+
+    .contacts {
+
+    .contact-list {
+        margin: 0;
+        width: 100%;
+        margin: 3.5em;
+    }
+    }
+
+    #PriceListAnchor {
+        margin-top: 8em;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+
+    .cennik {
+
+        .contact-form {
+            width: 18em;
+        }
+    }
+
+}

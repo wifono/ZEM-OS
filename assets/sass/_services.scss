@@ -116,7 +116,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 64vw;
-    gap: 12em;
+    gap: 12%;
 
     h1 {
         color: $yellow;
@@ -174,7 +174,7 @@
         font-weight: 500;
         padding: 1em 0 1em 2.6em;
         color: $yellow;
-        margin-left: 13.5vw;
+        margin-left: 12vw;
     }
     
 }
