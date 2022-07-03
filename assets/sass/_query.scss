@@ -2,14 +2,14 @@
     .boxes {
         gap: 3vw;
     }
+
+    main {
+        gap: 5vw;
+    }
 }
 
 @media screen and (max-width: 1600px) {
     
-    main {
-        gap: 6vw;
-    }
-
     iframe {
         max-width: 832px;
     }
@@ -20,6 +20,11 @@
     .boxes {
         gap: 2vw;
     }
+
+    main {
+        gap: 3vw;
+    }
+
 }
 
 @media screen and (max-width:1380px) {
@@ -119,11 +124,22 @@
     .cennik {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
 
         ul {
             justify-self: center;
+            padding-left: 3.5em;
+            width: 95%;
+        }
+
+        .contact-form {
             align-self: center;
         }
+    }
+
+    .cennikMain {
+        align-items: flex-start;
     }
 }
 
@@ -141,7 +157,7 @@
 @media screen and (max-width:1000px) {
     
     .boxes {
-        gap: 1vw;
+        gap: 2vw;
         flex-direction: column;
         align-items: center;
 
@@ -210,7 +226,7 @@
             background: none;
             border: none;
             font-size: 2em;
-            color: $almost-black;
+            color: $yellow;
 
             &:hover,
             &:active,
@@ -219,6 +235,13 @@
             }
         }
 
+    }
+
+    .headingbox {
+
+        h1 {
+            padding: 1em 0 1em 10vw;
+        }
     }
 
     .sluzbyMain {
@@ -347,13 +370,16 @@
 
     .sidebar {
         h1 {
-            text-align: center;
+            text-align: center; 
+            display: none;
         }
     }
-.contactsSection {
-    .contact-list {
-        padding: 0;
-        margin-left: -3em;
+    .contactsSection {
+
+        justify-content: flex-start;
+
+        .contact-list {
+            padding: 0;
     }
 }
 
@@ -372,11 +398,18 @@
     }
     }
 
+    .boxes {
+        gap: 5vw;
+    }
+
 }
 
 @media screen and (max-width:490px) {
     .cennik {
-        width: 80%;
+
+        span {
+            margin: 1em 0 1.5em 0;
+        }
 
         .contact-form {
             width: 21em;
@@ -390,8 +423,13 @@
                     display: none;
                 }
 
+                select, input {
+                    width: 24.7em;
+                }
+
                 input:nth-child(9) {
                     margin-left: 0;
+                    width: 15em;
                 }
             }
 
@@ -405,10 +443,46 @@
     .sluzby-podstranka {
         margin: 2em;
     }
+
+
+    .cennikMain {
+
+        .cennik {
+            
+            ul {
+                padding: 0 2em;
+            }
+        }
+    }
+
+    #PriceListAnchor {
+        margin-bottom: 2em;
+    }
 }
 
-@media screen and (max-width:451px) {
+@media screen and (max-width:450px) {
+    
+    .boxes {
 
+        .small-box {
+
+            width: 84%;
+        }
+    }
+
+    .contactsSection {
+        
+        .contact-list {
+            margin-left: 4em;
+        }
+    }
+
+    footer {
+
+        .flex-footer {
+            padding: 2em;
+        }
+    }
 }
 
 @media screen and (max-width:405px) {
@@ -423,7 +497,7 @@
     }
 
     #PriceListAnchor {
-        margin-top: 8em;
+        margin-top: 5.5em;
     }
 
 }
@@ -437,4 +511,11 @@
         }
     }
 
+}
+
+@media screen and (max-width:330px) {
+    
+    #PriceListAnchor {
+        margin-top: 7em;
+    }
 }
