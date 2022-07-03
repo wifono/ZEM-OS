@@ -77,7 +77,7 @@ nav {
 main {
   display: flex;
   justify-content: center;
-  gap: 11vw;
+  gap: 9vw;
   margin: 3em;
   margin-top: 12em;
   margin-bottom: 10em;
@@ -322,9 +322,8 @@ main {
   .headingbox h1 {
     font-size: 1.7em;
     font-weight: 500;
-    padding: 1em 0 1em 2.6em;
-    color: #ffc600;
-    margin-left: 12vw; }
+    padding: 1em 0 1em 18.5vw;
+    color: #ffc600; }
 
 #PriceListAnchor {
   color: aliceblue;
@@ -349,7 +348,7 @@ main {
   width: 100%;
   height: auto;
   background: #C9C9C9;
-  padding: 4em 0 7em 0; }
+  padding: 2em 0; }
   .stroje-main .stroje {
     display: grid;
     grid-template-columns: 1fr;
@@ -548,16 +547,19 @@ footer {
 
 @media screen and (max-width: 1700px) {
   .boxes {
-    gap: 3vw; } }
-@media screen and (max-width: 1600px) {
-  main {
-    gap: 6vw; }
+    gap: 3vw; }
 
+  main {
+    gap: 5vw; } }
+@media screen and (max-width: 1600px) {
   iframe {
     max-width: 832px; } }
 @media screen and (max-width: 1550px) {
   .boxes {
-    gap: 2vw; } }
+    gap: 2vw; }
+
+  main {
+    gap: 3vw; } }
 @media screen and (max-width: 1380px) {
   main .big-logo img {
     max-width: 30em; }
@@ -609,10 +611,18 @@ footer {
 @media screen and (max-width: 1100px) {
   .cennik {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0; }
     .cennik ul {
       justify-self: center;
-      align-self: center; } }
+      padding-left: 3.5em;
+      width: 95%; }
+    .cennik .contact-form {
+      align-self: center; }
+
+  .cennikMain {
+    align-items: flex-start; } }
 @media screen and (max-width: 1050px) {
   header img {
     left: 5%; }
@@ -621,7 +631,7 @@ footer {
     margin-left: 35vw; } }
 @media screen and (max-width: 1000px) {
   .boxes {
-    gap: 1vw;
+    gap: 2vw;
     flex-direction: column;
     align-items: center; }
     .boxes .small-box {
@@ -667,6 +677,9 @@ footer {
     .hamburger .closemenu:active,
     .hamburger .closemenu:focus {
       color: #ffc600; }
+
+  .headingbox h1 {
+    padding: 1em 0 1em 10vw; }
 
   .sluzbyMain {
     grid-template-columns: 1fr;
@@ -741,11 +754,13 @@ footer {
     display: none; }
 
   .sidebar h1 {
-    text-align: center; }
+    text-align: center;
+    display: none; }
 
-  .contactsSection .contact-list {
-    padding: 0;
-    margin-left: -3em; }
+  .contactsSection {
+    justify-content: flex-start; }
+    .contactsSection .contact-list {
+      padding: 0; }
 
   main {
     margin-bottom: 3em; }
@@ -753,23 +768,44 @@ footer {
   .services .services-list {
     margin-top: 4em; }
     .services .services-list .left-side, .services .services-list .right-side {
-      width: 98%; } }
+      width: 98%; }
+
+  .boxes {
+    gap: 5vw; } }
 @media screen and (max-width: 490px) {
-  .cennik {
-    width: 80%; }
-    .cennik .contact-form {
-      width: 21em; }
-      .cennik .contact-form form {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .cennik .contact-form form br {
-          display: none; }
-        .cennik .contact-form form input:nth-child(9) {
-          margin-left: 0; } }
+  .cennik span {
+    margin: 1em 0 1.5em 0; }
+  .cennik .contact-form {
+    width: 21em; }
+    .cennik .contact-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .cennik .contact-form form br {
+        display: none; }
+      .cennik .contact-form form select, .cennik .contact-form form input {
+        width: 24.7em; }
+      .cennik .contact-form form input:nth-child(9) {
+        margin-left: 0;
+        width: 15em; } }
 @media screen and (max-width: 600px) {
   .sluzby-podstranka {
-    margin: 2em; } }
+    margin: 2em; }
+
+  .cennikMain .cennik ul {
+    padding: 0 2em; }
+
+  #PriceListAnchor {
+    margin-bottom: 2em; } }
+@media screen and (max-width: 450px) {
+  .boxes .small-box {
+    width: 84%; }
+
+  .contactsSection .contact-list {
+    margin-left: 4em; }
+
+  footer .flex-footer {
+    padding: 2em; } }
 @media screen and (max-width: 405px) {
   .contacts .contact-list {
     margin: 0;
@@ -777,9 +813,12 @@ footer {
     margin: 3.5em; }
 
   #PriceListAnchor {
-    margin-top: 8em; } }
+    margin-top: 5.5em; } }
 @media screen and (max-width: 350px) {
   .cennik .contact-form {
     width: 18em; } }
+@media screen and (max-width: 330px) {
+  #PriceListAnchor {
+    margin-top: 7em; } }
 
 /*# sourceMappingURL=styles.css.map */
