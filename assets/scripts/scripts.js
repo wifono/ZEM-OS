@@ -66,6 +66,14 @@ closeIcon[0].addEventListener('click', () => {
   })  
 })
 
+const menuAnchor = document.querySelectorAll('.hamburgermenu > ul > li')
+
+menuAnchor.forEach( a => a.addEventListener("click", (e) => {
+    menu[0].style.display = `none`;
+    closeIcon[0].style.display = `none`;
+    menuIcon[0].style.display = `block`
+}))
+
 window.addEventListener('resize', () => {
 if (window.innerWidth > 870) {
     menu[0].style.display = `none`;
